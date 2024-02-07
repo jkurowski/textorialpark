@@ -1,3 +1,57 @@
+/* Nadpisz Bootstrap
+================================================== */
+a,
+a:hover {
+  text-decoration: none;
+}
+a:hover {
+  color: inherit;
+}
+a:focus,
+button:focus {
+  outline: none;
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+iframe {
+  display: block;
+  border: 0;
+}
+:focus,
+button:focus,
+.form-control:focus {
+  outline: none;
+  box-shadow: 0 0 0 0 rgba(13, 110, 253, 0.25);
+}
+.form-control.is-invalid:focus,
+.was-validated .form-control:invalid:focus {
+  border-color: #dc3545;
+  box-shadow: 0 0 0 0 rgba(220, 53, 69, 0.25);
+}
+::-moz-focus-inner {
+  border: 0;
+}
+.no-gutters {
+  margin: 0;
+}
+.no-gutters > .col,
+.no-gutters > [class*="col-"] {
+  padding-right: 0;
+  padding-left: 0;
+}
+.invalid-feedback {
+  margin-top: 0;
+  font-size: 11px;
+  line-height: normal;
+}
+.invalid-feedback strong {
+  font-weight: normal;
+}
+/* Nadpisz Bootstrap
+================================================== */
 body {
   font-family: 'Oswald', sans-serif;
   letter-spacing: 0.5px;
@@ -242,7 +296,8 @@ a:hover {
 }
 #mainNav.navbar-orange {
   background: #e84e0f !important;
-  position: static !important;
+  position: relative !important;
+  z-index: 30;
 }
 #mainNav .navbar-nav > li.nav-item > a.nav-link,
 #mainNav .navbar-nav > li.nav-item > a.nav-link:focus {
@@ -2867,5 +2922,184 @@ a.nav-link:hover {
 }
 .newsletter-rules a:hover {
   color: #000;
+}
+/* Formularze
+================================================== */
+.formError {
+  position: absolute;
+  top: 300px;
+  left: 300px;
+  display: block;
+  z-index: 500;
+  cursor: pointer;
+}
+.formError .formErrorContent {
+  background: #ff9000;
+  position: relative;
+  z-index: 5001;
+  color: #fff;
+  width: 190px;
+  font-size: 10px;
+  border: 1px solid #ff9000;
+  line-height: normal;
+  padding: 2px 10px 2px 10px;
+}
+.formError .formErrorArrow {
+  width: 12px;
+  margin: -2px 0 0 1px;
+  position: relative;
+  z-index: 5006;
+}
+.formError .formErrorArrowBottom {
+  box-shadow: none;
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+  margin: 0 0 0 12px;
+  top: 2px;
+}
+.formError .formErrorArrow div {
+  font-size: 0;
+  height: 1px;
+  background: #ff9000;
+  margin: 0 auto;
+  line-height: 0;
+  display: block;
+}
+.formError .formErrorArrowBottom div {
+  box-shadow: none;
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+}
+.formError .formErrorArrow .line10 {
+  width: 15px;
+  border: 0;
+}
+.formError .formErrorArrow .line9 {
+  width: 13px;
+  border: 0;
+}
+.formError .formErrorArrow .line8 {
+  width: 11px;
+}
+.formError .formErrorArrow .line7 {
+  width: 9px;
+}
+.formError .formErrorArrow .line6 {
+  width: 7px;
+}
+.formError .formErrorArrow .line5 {
+  width: 5px;
+}
+.formError .formErrorArrow .line4 {
+  width: 3px;
+}
+.formError .formErrorArrow .line3 {
+  width: 1px;
+}
+.formError .formErrorArrow .line2 {
+  width: 0;
+}
+.formError .formErrorArrow .line1 {
+  width: 0;
+}
+.inputbox-error {
+  border-bottom: 1px solid #ff9000 !important;
+}
+#footerForm {
+  background: #73859c;
+  padding: 70px 0;
+  color: white;
+}
+.col-input-important {
+  display: none;
+}
+#contact-form label {
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+}
+#contact-form .rodo-obligation p {
+  font-size: 12px;
+  line-height: 16px;
+}
+#contact-form .rodo-rule {
+  display: flex;
+  padding-top: 20px;
+}
+#contact-form .rodo-rule label {
+  padding-left: 12px;
+}
+#contact-form .rodo-rule p {
+  font-size: 12px;
+  line-height: 16px;
+}
+#contact-form button {
+  font-size: 20px;
+  color: #85212e;
+  text-transform: uppercase;
+  border: 0;
+  padding: 10px 20px;
+  transition: all 200ms linear;
+}
+#contact-form button:hover {
+  background: #9b1a2c;
+  color: white;
+}
+#contact-form .form-control {
+  border: 1px dashed #fff;
+  padding: 10px 15px;
+  background: #57687d;
+  font-size: 20px;
+  color: #fff;
+  transition: all 200ms linear;
+}
+#contact-form .form-control:hover,
+#contact-form .form-control:active,
+#contact-form .form-control:focus {
+  border: 1px solid #fff;
+}
+#contact-form .rodo-rule {
+  display: block;
+}
+#contact-form .rodo-rule input {
+  float: left;
+}
+#contact-form .rodo-rule label {
+  padding-left: 25px;
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 21px;
+  margin: 0;
+}
+#contact-form .rodo-rule label a {
+  color: white;
+  border-bottom: 1px dashed #fff;
+  transition: all 200ms linear;
+}
+#contact-form .rodo-rule label a:hover {
+  border-bottom: 1px solid #fff;
+}
+.form-control {
+  border: 0;
+  border-bottom: 1px solid #b3b3b3;
+  padding: 10px 15px;
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 0;
+}
+.kontakt-details {
+  color: #ffffff;
+  font-size: 23px;
+  font-weight: 300;
+  line-height: 34px;
+  text-align: left;
+}
+.kontakt-details p {
+  margin: 0;
+}
+.kontakt-details p a {
+  color: white;
+}
+.kontakt-details p a:hover {
+  border-bottom: 1px dashed #fff;
 }
 /*# sourceMappingURL=styles.css.map */

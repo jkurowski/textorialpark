@@ -1,17 +1,26 @@
-<div id="newsletter" class="container-fluid newsletter">
-    <div class="row">
-        <div class="col-md-1 off992"></div>
-        <div class="col-lg-10 col-md-12  hpnewsletter">
-            <div class="row m-0">
-                <div class="col-lg-4 col-md-3">
-                    <span class="hp-newsletter-label">NEWS<font style="font-weight:400">LETTER</font></span>
-                </div>
-                <div class="col-lg-8 col-md-9 text-right">
+<div id="footerForm">
+    <div class="container">
+        <div class="row">
+            <div class="col-3">
+                <img src="https://textorialpark.test/images/logo.png" class="logo" alt="Logo">
 
+                <div class="kontakt-details pt-5">
+                    St. Paul’s Developments Polska <br>
+                    <font class="f400">+48 605 273 339</font><br>
+                    ul. Fabryczna 17<br>
+                    90-344 Łódź<br>
+                    <br>
+                    <div class="kontakt-details-box">
+                        <p><a href="tel:+48422908003">tel: +48 42 290 80 03</a></p>
+                        <p><a href="mailto:biuro@st-pauls.com.pl">biuro@st-pauls.com.pl</a></p>
+                        <p><a href="mailto:j.zielinska@st-pauls.com.pl">j.zielinska@st-pauls.com.pl</a></p>
+                    </div>
                 </div>
             </div>
+            <div class="col-9 text-right">
+                @include('front.contact.form')
+            </div>
         </div>
-        <div class="col-md-1 off992"></div>
     </div>
 </div>
 
