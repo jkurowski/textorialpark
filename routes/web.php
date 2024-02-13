@@ -16,6 +16,11 @@ Route::get('routes', function() {
 Route::group(['namespace' => 'Front'], function () {
     Route::get('/', 'IndexController@index')->name('index');
     Route::get('/najemcy/', 'Renters\IndexController@index');
+    Route::get('/live/', 'Static\IndexController@live')->name('front.live');
+    Route::get('/work/', 'Static\IndexController@work')->name('front.work');
+    Route::get('/enjoy/', 'Static\IndexController@enjoy')->name('front.enjoy');
+
+    Route::get('/historia/', 'Static\IndexController@history')->name('front.history');
 
     // Contact page
     Route::get('kontakt', 'ContactController@index')->name('contact');

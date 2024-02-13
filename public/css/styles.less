@@ -37,6 +37,9 @@ button:focus,
   font-weight: normal
 }
 
+p {
+  margin: 0;
+}
 
 /* Nadpisz Bootstrap
 ================================================== */
@@ -1153,10 +1156,6 @@ a.nav-link:hover {
   font-weight:300;
   line-height:28px
 }
-
-
-
-
 
 @media screen and (max-width: 1790px) {
 
@@ -3602,6 +3601,19 @@ a.nav-link:hover {
   color: #000;
 }
 
+#posters {
+  background: #b4b4b4;
+  padding: 70px 0 100px;
+  h2 {
+    color: white;
+    font-weight: 300;
+  }
+
+  a {
+    flex: 1 0 20%;
+  }
+}
+
 /* Formularze
 ================================================== */
 .formError{position:absolute;top:300px;left:300px;display:block;z-index:500;cursor:pointer}.formError .formErrorContent{background:#ff9000;position:relative;z-index:5001;color:#fff;width:190px;font-size:10px;border:1px solid #ff9000;line-height:normal;padding:2px 10px 2px 10px}.formError .formErrorArrow{width:12px;margin:-2px 0 0 1px;position:relative;z-index:5006}.formError .formErrorArrowBottom{box-shadow:none;-moz-box-shadow:none;-webkit-box-shadow:none;margin:0 0 0 12px;top:2px}.formError .formErrorArrow div{font-size:0;height:1px;background:#ff9000;margin:0 auto;line-height:0;display:block}.formError .formErrorArrowBottom div{box-shadow:none;-moz-box-shadow:none;-webkit-box-shadow:none}.formError .formErrorArrow .line10{width:15px;border:0}.formError .formErrorArrow .line9{width:13px;border:0}.formError .formErrorArrow .line8{width:11px}.formError .formErrorArrow .line7{width:9px}.formError .formErrorArrow .line6{width:7px}.formError .formErrorArrow .line5{width:5px}.formError .formErrorArrow .line4{width:3px}.formError .formErrorArrow .line3{width:1px}.formError .formErrorArrow .line2{width:0}.formError .formErrorArrow .line1{width:0}.inputbox-error{border-bottom:1px solid #ff9000!important}
@@ -3716,3 +3728,43 @@ a.nav-link:hover {
     }
   }
 }
+
+.slick-carousel {
+  .row {
+    display: none;
+    &.slick-initialized {
+      display: block;
+    }
+  }
+
+  .slick-arrow {
+    font-size: 50px;
+    color: #ba8b41;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    left: 50px;
+    z-index: 30;
+    height: 40px;
+    width: 40px;
+    border: 0;
+    background: rgba(0,0,0,0.6);
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &.slick-next {
+      right: 50px;
+      left: auto;
+    }
+
+    i {
+      font-size: 26px;
+      color: white;
+    }
+  }
+}
+
+@import url(less-partials/additions);
+@import url(less-partials/slick);
