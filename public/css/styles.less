@@ -56,6 +56,36 @@ a:hover {
   color:#9b1a2c
 }
 
+/* Fonty
+================================================== */
+@font-face{font-family:'FontAwesome';src:url('../../fonts/fontawesome-webfont.eot');src:url('../../fonts/fontawesome-webfont.eot?#iefix') format('embedded-opentype'),url('../../fonts/fontawesome-webfont.woff') format('woff'),url('../../fonts/fontawesome-webfont.ttf') format('truetype'),url('../../fonts/fontawesome-webfont.svg#fontawesomeregular') format('svg');font-weight:normal;font-style:normal}
+.fa-icons:before, .fa-icons:after { display: inline-block; font-family: "FontAwesome"; speak: none; font-style: normal; font-weight: normal; font-variant: normal; text-transform: none; text-rendering: auto; line-height: 1; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+@font-face {
+  font-family: 'Simpleicons';
+  src: url('../../fonts/Simple-Line-Icons.eot?v=2.4.0');
+  src: url('../../fonts/Simple-Line-Icons.eot?v=2.4.0#iefix') format('embedded-opentype'),
+  url('../../fonts/Simple-Line-Icons.woff2?v=2.4.0') format('woff2'),
+  url('../../fonts/Simple-Line-Icons.ttf?v=2.4.0') format('truetype'),
+  url('../../fonts/Simple-Line-Icons.woff?v=2.4.0') format('woff'),
+  url('../../fonts/Simple-Line-Icons.svg?v=2.4.0#simple-line-icons') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Swipebox
+================================================== */
+html.swipebox-html.swipebox-touch{overflow:hidden!important}#swipebox-overlay img{border:5px solid white}#swipebox-overlay{width:100%;height:100%;position:fixed;top:0;left:0;z-index:99999!important;overflow:hidden;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}#swipebox-container{position:relative;width:100%;height:100%}#swipebox-slider{-webkit-transition:-webkit-transform .4s ease;transition:transform .4s ease;height:100%;left:0;top:0;width:100%;white-space:nowrap;position:absolute;display:none;cursor:pointer}#swipebox-slider .slide{height:100%;width:100%;line-height:1px;text-align:center;display:inline-block}#swipebox-slider .slide:before{content:"";display:inline-block;height:50%;width:1px;margin-right:-1px}#swipebox-slider .slide .swipebox-inline-container,#swipebox-slider .slide .swipebox-video-container,#swipebox-slider .slide img{display:inline-block;max-height:100%;max-width:100%;margin:0;padding:0;width:auto;height:auto;vertical-align:middle}#swipebox-slider .slide .swipebox-video-container{background:0 0;max-width:1140px;max-height:100%;width:100%;padding:5%;-webkit-box-sizing:border-box;box-sizing:border-box}#swipebox-slider .slide .swipebox-video-container .swipebox-video{width:100%;height:0;padding-bottom:56.25%;overflow:hidden;position:relative}#swipebox-slider .slide .swipebox-video-container .swipebox-video iframe{width:100%!important;height:100%!important;position:absolute;top:0;left:0}#swipebox-slider .slide-loading{background:url('../../gfx/template/loader.gif') center center no-repeat}#swipebox-bottom-bar,#swipebox-top-bar{-webkit-transition:.5s;transition:.5s;position:absolute;left:0;z-index:999;height:50px;width:100%}#swipebox-bottom-bar{top:50%}#swipebox-bottom-bar.visible-bars{-webkit-transform:translate3d(0,-50px,0);transform:translate3d(0,-50px,0)}#swipebox-top-bar{top:-50px}#swipebox-top-bar.visible-bars{-webkit-transform:translate3d(0,50px,0);transform:translate3d(0,50px,0)}#swipebox-title{display:block;width:100%;text-align:center}#swipebox-close {border:none!important;text-decoration:none!important;cursor:pointer;width:32px;height:32px}#swipebox-arrows{display:block;margin:0 auto;width:100%;height:50px}#swipebox-close{top:20px;right:50px !important;position:absolute;z-index:9999}.swipebox-no-close-button #swipebox-close{display:none}#swipebox-next.disabled,#swipebox-prev.disabled{opacity:.3}.swipebox-no-touch #swipebox-overlay.rightSpring #swipebox-slider{-webkit-animation:rightSpring .3s;animation:rightSpring .3s}.swipebox-no-touch #swipebox-overlay.leftSpring #swipebox-slider{-webkit-animation:leftSpring .3s;animation:leftSpring .3s}.swipebox-touch #swipebox-container:after,.swipebox-touch #swipebox-container:before{-webkit-backface-visibility:hidden;backface-visibility:hidden;-webkit-transition:all .3s ease;transition:all .3s ease;content:' ';position:absolute;z-index:999;top:0;height:100%;width:20px;opacity:0}.swipebox-touch #swipebox-container:before{left:0;-webkit-box-shadow:inset 10px 0 10px -8px #656565;box-shadow:inset 10px 0 10px -8px #656565}.swipebox-touch #swipebox-container:after{right:0;-webkit-box-shadow:inset -10px 0 10px -8px #656565;box-shadow:inset -10px 0 10px -8px #656565}.swipebox-touch #swipebox-overlay.leftSpringTouch #swipebox-container:before,.swipebox-touch #swipebox-overlay.rightSpringTouch #swipebox-container:after{opacity:1}@-webkit-keyframes rightSpring{0%{left:0}50%{left:-30px}100%{left:0}}@keyframes rightSpring{0%{left:0}50%{left:-30px}100%{left:0}}@-webkit-keyframes leftSpring{0%{left:0}50%{left:30px}100%{left:0}}@keyframes leftSpring{0%{left:0}50%{left:30px}100%{left:0}}@media screen and (min-width:800px){#swipebox-close{right:30px}#swipebox-arrows{width:90%}}#swipebox-bottom-bar,#swipebox-top-bar{opacity:.95}#swipebox-top-bar{color:#fff!important;font-size:15px;line-height:43px;font-family:Helvetica,Arial,sans-serif}
+#swipebox-overlay{background:#000000;background:rgba(0,0,0,0.9)}
+#swipebox-prev:before, #swipebox-next:before, #swipebox-close:before {font-family:'FontAwesome';font-size:50px;color:#afafaf;background-image:none !important;cursor:pointer}
+#swipebox-prev:hover:before, #swipebox-next:hover:before, #swipebox-close:hover:before {color:#fff}
+#swipebox-prev:before {float:left;content:"\f053"}
+#swipebox-next:before {float:right;content:"\f054"}
+#swipebox-close:before {float:right;content:"\f00d";font-size:30px}
+
+#swipebox-slider .slide img {
+  background:white
+}
+
 .hp-news-title {
   margin-top:5px
 }
@@ -836,9 +866,6 @@ a.nav-link:hover {
 
 .kontakt-social {
   max-height:24px;
-  vertical-align: middle;
-  margin-bottom: 0.25em;
-  margin-right:5px
 }
 
 .o-nas-page-metryka {
@@ -854,7 +881,9 @@ a.nav-link:hover {
 }
 
 .kontakt-line {
-  display:block;
+  display:flex;
+  justify-content: center;
+  align-items: center;
   position:initial;
   margin-bottom:10px;
   width:100% !important;

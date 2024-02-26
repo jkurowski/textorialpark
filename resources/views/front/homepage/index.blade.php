@@ -2,7 +2,7 @@
 
 @section('content')
     <header class="masthead text-center text-white d-flex ptb-0">
-        <div id="zoominheader" style="background-image:url('https://textorialpark.com/img/hpbg2.jpg')">
+        <div id="zoominheader" style="background-image:url('{{ asset('uploads/headers/hpbg2.jpg') }}')">
             <div class="zoomoutheader">
                 <div class="zoomoutinsider">
                     <div class="zoomoutinsider2">
@@ -62,7 +62,7 @@
                 <div class="row newsboard-list-row">
                     <div class="col-md-3 text-center">
                         <a href="textorial-park-z-nowym-najemca">
-                            <img src="img/newsboard/Textorial-Park-z-nowym-najemca-square.jpg" class="img-fluid newsboardimg" alt="">
+                            <img src="https://textorialpark.com/img/newsboard/Textorial-Park-z-nowym-najemca-square.jpg" class="img-fluid newsboardimg" alt="">
                         </a>
                         <img src="{{ asset('images/arrowdown.png') }}" class="hp-news-arrow" alt="">
                         <div class="hp-news-title"><a href="textorial-park-z-nowym-najemca">Textorial Park <b>z nowym najemcą</b></a></div>
@@ -70,7 +70,7 @@
 
                     <div class="col-md-3 text-center">
                         <a href="jesieny-planszowkowy-mlyn">
-                            <img src="img/newsboard/planszowkowy-mlyn-4-square.png" class="img-fluid newsboardimg" alt="">
+                            <img src="https://textorialpark.com/img/newsboard/planszowkowy-mlyn-4-square.png" class="img-fluid newsboardimg" alt="">
                         </a>
                         <img src="{{ asset('images/arrowdown.png') }}" class="hp-news-arrow" alt="">
                         <div class="hp-news-title"><a href="jesieny-planszowkowy-mlyn"><b>Jesienny Planszówkowy Młyn 4.0</b> w Textorial Park</a></div>
@@ -78,14 +78,14 @@
 
                     <div class="col-md-3 text-center">
                         <a href="mabion-na-nastepne-5-lat-w-textorial-park">
-                            <img src="img/newsboard/mabion-na-nastepne-5-lat-square.jpg" class="img-fluid newsboardimg" alt="">
+                            <img src="https://textorialpark.com/img/newsboard/mabion-na-nastepne-5-lat-square.jpg" class="img-fluid newsboardimg" alt="">
                         </a>
                         <img src="{{ asset('images/arrowdown.png') }}" class="hp-news-arrow" alt="">
                         <div class="hp-news-title"><a href="mabion-na-nastepne-5-lat-w-textorial-park"><b>Mabion S.A</b> na następne pięć lat w Textorial Park </a></div>
                     </div>
 
                     <div class="col-md-3 text-center">
-                        <a href="spektakl-maly-ksiaze"><img src="img/newsboard/textorial-park-maly-ksiaze-spektakl-square.jpg" class="img-fluid newsboardimg" alt=""></a>
+                        <a href="spektakl-maly-ksiaze"><img src="https://textorialpark.com/img/newsboard/textorial-park-maly-ksiaze-spektakl-square.jpg" class="img-fluid newsboardimg" alt=""></a>
                         <img src="{{ asset('images/arrowdown.png') }}" class="hp-news-arrow" alt="">
                         <div class="hp-news-title"><a href="spektakl-maly-ksiaze"><b>Spektakl „Mały Książę”</b> 28 sierpnia w Textorial Park</a></div>
                     </div>
@@ -94,6 +94,29 @@
             <div class="col-md-1 off992"></div>
         </div>
     </div>
+
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-12 position-relative">
+                    <div class="text-line text-line-right bg-red text-center">KAMPUS <font class="f400">TEXTORIAL PARK</font></div>
+                    <img src="https://textorialpark.com/img/hpgal1.jpg" class="img-fluid" alt="Kampus Textorial Park">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <a href="https://www.youtube.com/watch?v=1oHo6VofwD0" data-lity="">
+                        <img src="https://textorialpark.com/img/hpvideo2x.jpg" class="img-fluid" alt="Zobacz video">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <div id="instagram" class="container-fluid newsletter bg-red">
         <div class="row">

@@ -11,7 +11,7 @@ class IndexController extends Controller
     public function index()
     {
         $page = Page::find(10);
-        $renters = Rentier::all();
+        $renters = Rentier::orderBy('sort', 'ASC')->get();
 
         return view("front.renters.index")->with([
             'page' => $page,

@@ -49,14 +49,14 @@
                 </div>
 
                 <div class="footer-col-3">
-                    Textorial Park<br>
-                    ul. Fabryczna 17, 90-344 Łódź<br>
-                    kontakt: Joanna Zielińska<br>
-                    St. Paul’s Developments Polska<br>
-                    biuro@st-pauls.com.pl<br>
-                    j.zielinska@st-pauls.com.pl<br>
-                    +48 42 290 80 03<br>
-                    +48 605 273 339<br>
+                    <p>Textorial Park</p>
+                    <p>ul. Fabryczna 17, 90-344 Łódź</p>
+                    <p>kontakt: Joanna Zielińska</p>
+                    <p>St. Paul’s Developments Polska</p>
+                    <p><a href="mailto:biuro@st-pauls.com.pl">biuro@st-pauls.com.pl</a></p>
+                    <p><a href="mailto:j.zielinska@st-pauls.com.pl">j.zielinska@st-pauls.com.pl</a></p>
+                    <p><a href="tel:+48422908003">+48 42 290 80 03</a></p>
+                    <p><a href="tel:+48605273339">+48 605 273 339</a></p>
 
                 </div>
             </div>
