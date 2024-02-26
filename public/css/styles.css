@@ -502,6 +502,9 @@ html.swipebox-html.swipebox-touch {
 .najemcy-row {
   margin-bottom: 80px;
 }
+.najemcy-row:last-child {
+  margin-bottom: 0;
+}
 .lang-pl {
   margin-right: 2px !important;
 }
