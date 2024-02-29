@@ -26,8 +26,7 @@
 
 <div class="container-fluid footer">
     <div class="row">
-        <div class="col-md-1 off992"></div>
-        <div class="col-lg-10 col-md-12 footbgbox text-right">
+        <div class="col-12 footbgbox text-right">
             <div class="footer-in">
                 <div class="footer-space">&nbsp;</div>
                 <div class="footer-col-1">
@@ -61,7 +60,6 @@
                 </div>
             </div>
         </div>
-        <div class="col-md-1 off992"></div>
     </div>
 </div>
 

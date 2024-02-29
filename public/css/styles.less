@@ -56,6 +56,14 @@ a:hover {
   color:#9b1a2c
 }
 
+.no-header {
+  padding-top: 150px !important;
+
+  #mainNav {
+    background: #73859d;
+  }
+}
+
 /* Fonty
 ================================================== */
 @font-face{font-family:'FontAwesome';src:url('../../fonts/fontawesome-webfont.eot');src:url('../../fonts/fontawesome-webfont.eot?#iefix') format('embedded-opentype'),url('../../fonts/fontawesome-webfont.woff') format('woff'),url('../../fonts/fontawesome-webfont.ttf') format('truetype'),url('../../fonts/fontawesome-webfont.svg#fontawesomeregular') format('svg');font-weight:normal;font-style:normal}
@@ -70,6 +78,87 @@ a:hover {
   url('../../fonts/Simple-Line-Icons.svg?v=2.4.0#simple-line-icons') format('svg');
   font-weight: normal;
   font-style: normal;
+}
+
+/* Newsboard
+================================================== */
+.post-details {
+  h1 {
+    text-transform: uppercase;
+    font-size: 40px;
+    font-weight: 600;
+  }
+  h3 {
+    font-size: 23px;
+  }
+  p {
+    font-size: 20px;
+    margin-bottom: 20px;
+    line-height: 34px;
+  }
+}
+
+.news-text {
+  p {
+    font-size: 20px;
+    margin-bottom: 20px;
+    line-height: 34px;
+  }
+  h2 {
+    font-size: 36px;
+    font-weight: 300;
+    text-transform: uppercase;
+    a {
+      color: black;
+    }
+  }
+}
+
+.row {
+  .news-text {
+    padding-left: 50px;
+  }
+  &.flex-row-reverse {
+    .news-text {
+      padding-right: 50px;
+      padding-left: 0;
+    }
+  }
+}
+
+.blog-list {
+  article {
+    margin-bottom: 80px;
+    padding-bottom: 80px;
+    border-bottom: 1px dashed #000;
+    &:last-child {
+      margin-bottom: 0
+    }
+  }
+}
+
+.header-holder {
+  height: 151px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 999;
+}
+
+.navbar-brand, .navbar-brand img {
+  transition: all 100ms linear;
+}
+
+#mainNav.fixed {
+  background-color: #73859c;
+  z-index: 9999;
+  .navbar-brand {
+    width: 180px;
+  }
+  &.navbar {
+    padding: 10px 30px;
+  }
 }
 
 /* Swipebox
@@ -310,7 +399,6 @@ html.swipebox-html.swipebox-touch{overflow:hidden!important}#swipebox-overlay im
 
 #newsboard {
   position:relative;
-  background-color:#e2c9c5
 }
 
 .btn {
@@ -602,7 +690,7 @@ a.nav-link:hover {
 .footer-in {
   width:100%;
   display:table;
-  margin-top:130px;
+  margin-top:90px;
   padding-left:150px;
   padding-right:150px
 }
@@ -770,7 +858,7 @@ a.nav-link:hover {
   top:-30px;
   margin-left:-40px;
   font-weight:300;
-  z-index:999
+  z-index:99
 }
 
 .text-line-right {

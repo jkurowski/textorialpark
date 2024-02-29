@@ -40,8 +40,17 @@ class ArticleService
         $file_path = public_path('uploads/articles/' . $name);
         $file_thumb_path = public_path('uploads/articles/thumbs/' . $name);
 
-        Image::make($file_path)->fit(config('images.article.big_width'), config('images.article.big_height'))->save($file_path);
-        Image::make($file_path)->fit(config('images.article.thumb_width'), config('images.article.thumb_height'))->save($file_thumb_path);
+        Image::make($file_path)->resize(
+            config('images.article.big_width'), null,
+            function ($constraint) {
+                $constraint->aspectRatio();
+            })->save($file_path);
+
+        Image::make($file_path)->resize(
+            config('images.article.thumb_width'), null,
+            function ($constraint) {
+                $constraint->aspectRatio();
+            })->save($file_thumb_path);
 
         // WebP
         $file_path_webp = public_path('uploads/articles/webp/' . $name_webp);

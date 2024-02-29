@@ -67,6 +67,12 @@ a:hover {
   text-decoration: none;
   color: #9b1a2c;
 }
+.no-header {
+  padding-top: 150px !important;
+}
+.no-header #mainNav {
+  background: #73859d;
+}
 /* Fonty
 ================================================== */
 @font-face {
@@ -96,6 +102,71 @@ a:hover {
   src: url('../../fonts/Simple-Line-Icons.eot?v=2.4.0#iefix') format('embedded-opentype'), url('../../fonts/Simple-Line-Icons.woff2?v=2.4.0') format('woff2'), url('../../fonts/Simple-Line-Icons.ttf?v=2.4.0') format('truetype'), url('../../fonts/Simple-Line-Icons.woff?v=2.4.0') format('woff'), url('../../fonts/Simple-Line-Icons.svg?v=2.4.0#simple-line-icons') format('svg');
   font-weight: normal;
   font-style: normal;
+}
+/* Newsboard
+================================================== */
+.post-details h1 {
+  text-transform: uppercase;
+  font-size: 40px;
+  font-weight: 600;
+}
+.post-details h3 {
+  font-size: 23px;
+}
+.post-details p {
+  font-size: 20px;
+  margin-bottom: 20px;
+  line-height: 34px;
+}
+.news-text p {
+  font-size: 20px;
+  margin-bottom: 20px;
+  line-height: 34px;
+}
+.news-text h2 {
+  font-size: 36px;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+.news-text h2 a {
+  color: black;
+}
+.row .news-text {
+  padding-left: 50px;
+}
+.row.flex-row-reverse .news-text {
+  padding-right: 50px;
+  padding-left: 0;
+}
+.blog-list article {
+  margin-bottom: 80px;
+  padding-bottom: 80px;
+  border-bottom: 1px dashed #000;
+}
+.blog-list article:last-child {
+  margin-bottom: 0;
+}
+.header-holder {
+  height: 151px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 999;
+}
+.navbar-brand,
+.navbar-brand img {
+  transition: all 100ms linear;
+}
+#mainNav.fixed {
+  background-color: #73859c;
+  z-index: 9999;
+}
+#mainNav.fixed .navbar-brand {
+  width: 180px;
+}
+#mainNav.fixed.navbar {
+  padding: 10px 30px;
 }
 /* Swipebox
 ================================================== */
@@ -559,7 +630,6 @@ html.swipebox-html.swipebox-touch {
 }
 #newsboard {
   position: relative;
-  background-color: #e2c9c5;
 }
 .btn {
   border-radius: 0;
@@ -842,7 +912,7 @@ a.nav-link:hover {
 .footer-in {
   width: 100%;
   display: table;
-  margin-top: 130px;
+  margin-top: 90px;
   padding-left: 150px;
   padding-right: 150px;
 }
@@ -982,7 +1052,7 @@ a.nav-link:hover {
   top: -30px;
   margin-left: -40px;
   font-weight: 300;
-  z-index: 999;
+  z-index: 99;
 }
 .text-line-right {
   right: 0;

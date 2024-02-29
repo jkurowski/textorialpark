@@ -13,7 +13,7 @@ Route::get('routes', function() {
     return '<pre>' . \Artisan::output() . '</pre>';
 });
 
-Route::group(['namespace' => 'Front'], function () {
+Route::group(['namespace' => 'Front', 'prefix' => '{locale?}', 'where' => ['locale' => '(?!admin)*[a-z]{2}'],], function() {
     Route::get('/', 'IndexController@index')->name('index');
     Route::get('/najemcy/', 'Renters\IndexController@index');
     Route::get('/live/', 'Static\IndexController@live')->name('front.live');
@@ -21,6 +21,12 @@ Route::group(['namespace' => 'Front'], function () {
     Route::get('/enjoy/', 'Static\IndexController@enjoy')->name('front.enjoy');
 
     Route::get('/historia/', 'Static\IndexController@history')->name('front.history');
+
+    // Articles
+    Route::group(['prefix' => 'newsboard', 'as' => 'front.news.'], function() {
+        Route::get('/',         'ArticleController@index')->name('index');
+        Route::get('/{slug}',   'ArticleController@show')->name('show');
+    });
 
     // Contact page
     Route::get('kontakt', 'ContactController@index')->name('contact');

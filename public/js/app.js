@@ -56,21 +56,21 @@ function closeNav() {
 $(document).ready(function(){
 
 // Menu
-    jQuery(".header-holder").height(jQuery("#header").outerHeight());
-    var aboveHeight = $('#header').outerHeight();
+    jQuery(".header-holder").height(jQuery("#mainNav").outerHeight());
+    var aboveHeight = $('#mainNav').outerHeight();
     $(window).scroll(function(){
-        if ($(window).scrollTop() > aboveHeight && !$('#header').hasClass('fixed')){
-            $('#header').addClass('fixed');
-            $('#header').animate({'top': '0px'}, {duration: 500});
+        if ($(window).scrollTop() > aboveHeight && !$('#mainNav').hasClass('fixed')){
+            $('#mainNav').addClass('fixed');
+            $('#mainNav').animate({'top': '0px'}, {duration: 500});
         }
-        if ($(window).scrollTop() < aboveHeight && $('#header').hasClass('fixed')){
-            $('#header').removeClass('fixed');
-            $('#header').removeAttr('style');
+        if ($(window).scrollTop() < aboveHeight && $('#mainNav').hasClass('fixed')){
+            $('#mainNav').removeClass('fixed');
+            $('#mainNav').removeAttr('style');
         }
     });
-    if ($(window).scrollTop() > aboveHeight && !$('#header').hasClass('fixed')){
-        $('#header').addClass('fixed');
-        $('#header').animate({'top': '0px'}, {duration: 300});
+    if ($(window).scrollTop() > aboveHeight && !$('#mainNav').hasClass('fixed')){
+        $('#mainNav').addClass('fixed');
+        $('#mainNav').animate({'top': '0px'}, {duration: 300});
     }
 
 // Lightbox

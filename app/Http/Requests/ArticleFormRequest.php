@@ -26,10 +26,10 @@ class ArticleFormRequest extends FormRequest
     {
         return [
             'title' => 'required|string|min:5|max:100|unique:articles,title,'.$this->route()->article,
-            'date' => 'required|date|date_format:Y-m-d',
+            'date' => 'date|date_format:Y-m-d',
             'content_entry' => '',
             'content' => 'required|string|min:5',
-            'status' => 'boolean',
+            'status' => '',
             'file_alt' => '',
             'meta_title' => '',
             'meta_description' => '',

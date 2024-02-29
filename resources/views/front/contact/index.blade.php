@@ -21,7 +21,10 @@
                 <div class="kontakt-lines-box">
                     <div class="text-line bg-red text-center kontakt-line">
                         <strong class="me-1">BĄDŹMY</strong>W KONTAKCIE
-                        <a href="https://www.facebook.com/textorialpark/" class="ms-4">
+                        <a href="https://www.linkedin.com/company/textorial-park-ii/" class="ms-4">
+                            <img src="{{ asset('images/linkedin-ico.png') }}" alt="LinkedIn Logo" class="kontakt-social">
+                        </a>
+                        <a href="https://www.facebook.com/textorialpark/" class="ms-2">
                             <img src="{{ asset('images/fb-ico.png') }}" alt="Facebook Logo" class="kontakt-social">
                         </a>
                         <a href="https://www.instagram.com/textorial_park/" class="ms-2">

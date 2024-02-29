@@ -67,6 +67,13 @@
                                 </span> Strony</a>
                         </li>
 
+                        <li {{ Request::routeIs('admin.article.*') ? 'class=active' : '' }}>
+                            <a href="{{ route('admin.article.index') }}">
+                                <span class="menu-bullet">
+                                    <span class="bullet bullet-dot"></span>
+                                </span> Newsboard</a>
+                        </li>
+
                         <li {{ Request::routeIs('admin.gallery.*') ? 'class=active' : '' }}>
                             <a href="{{ route('admin.gallery.index') }}">
                                 <span class="menu-bullet">

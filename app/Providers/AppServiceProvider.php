@@ -77,6 +77,10 @@ class AppServiceProvider extends ServiceProvider
 
         view()->composer('*', function ($view) {
             $view->with('current_locale', app()->getLocale());
+            $view->with('available_locales', config('app.available_locales'));
+
+            $currentRoute = Route::current();
+            $view->with('currentRoute', $currentRoute);
         });
 
         Image::observe(ImageObserver::class);
