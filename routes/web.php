@@ -42,4 +42,6 @@ Route::group(['namespace' => 'Front', 'prefix' => '{locale?}', 'where' => ['loca
         Route::get('/loadinline/{inline}', 'InlineController@show')->name('show');
         Route::post('/update/{inline}', 'InlineController@update')->name('update');
     });
+
+    Route::get('{uri}', 'MenuController@index')->where('uri', '([A-Za-z0-9\-\/]+)');
 });

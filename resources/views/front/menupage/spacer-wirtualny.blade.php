@@ -1,3 +1,5 @@
+@extends('layouts.page', ['body_class' => 'no-header'])
+
 <div class="p-5">
     {!! parse_text($page->content) !!}
 </div>

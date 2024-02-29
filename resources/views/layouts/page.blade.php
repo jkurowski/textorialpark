@@ -30,7 +30,11 @@
     @stack('style')
 
 </head>
+@if($page->slug == "spacer-wirtualny")
+    <body class="spacer-wirtualny no-header">
+@else
 <body class="{{ !empty($body_class) ? $body_class : '' }}">
+@endif
 {!! settings()->get("scripts_afterbody") !!}
 
 <div id="pagecontent">

@@ -98,5 +98,3 @@ Route::group([
     Route::get('logs', 'Log\IndexController@index')->name('log.index');
     Route::get('logs/datatable', 'Log\IndexController@datatable')->name('log.datatable');
 });
-
-Route::get('{uri}', 'Front\MenuController@index')->where('uri', '([A-Za-z0-9\-\/]+)');
