@@ -9,138 +9,123 @@
 @stop
 
 @section('content')
-    <section class="pb-4">
-        <div class="container">
-            <div class="row">
-                <div class="col-12 position-relative">
-                    <div class="text-line text-line-right bg-red text-center">PRZYJAZNA <font class="f400">PRZESTRZEŃ MIEJSKA</font></div>
-                    <img src="https://textorialpark.com/img/oferta2bg.jpg" class="img-fluid" alt="Przyjazna przestrzeń miejska">
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <div class="container slick-carousel">
-        <div class="row">
-
-            <div class="col-3">
-                <a href="https://textorialpark.com/img/enjoy/1m.jpeg" data-fancybox="gallerys">
-                    <img src="https://textorialpark.com/img/enjoy/1m.jpeg" alt="Image" style="max-width:100%;">
-                </a>
-            </div>
-            <div class="col-3">
-                <a href="https://textorialpark.com/img/enjoy/2m.jpeg" data-fancybox="gallerys">
-                    <img src="https://textorialpark.com/img/enjoy/2m.jpeg" alt="Image" style="max-width:100%;">
-                </a>
-            </div>
-            <div class="col-3">
-                <a href="https://textorialpark.com/img/enjoy/3m.jpeg" data-fancybox="gallerys">
-                    <img src="https://textorialpark.com/img/enjoy/3m.jpeg" alt="Image" style="max-width:100%;">
-                </a>
-            </div>
-            <div class="col-3">
-                <a href="https://textorialpark.com/img/enjoy/4m.jpeg" data-fancybox="gallerys">
-                    <img src="https://textorialpark.com/img/enjoy/4m.jpeg" alt="Image" style="max-width:100%;">
-                </a>
-            </div>
-
-            <div class="col-3">
-                <a href="https://textorialpark.com/img/enjoy/5m.jpg" data-fancybox="gallerys">
-                    <img src="https://textorialpark.com/img/enjoy/5m.jpg" alt="Image" style="max-width:100%;">
-                </a>
-            </div>
-            <div class="col-3">
-                <a href="https://textorialpark.com/img/enjoy/6m.jpg" data-fancybox="gallerys">
-                    <img src="https://textorialpark.com/img/enjoy/6m.jpg" alt="Image" style="max-width:100%;">
-                </a>
-            </div>
-            <div class="col-3">
-                <a href="https://textorialpark.com/img/enjoy/7m.jpg" data-fancybox="gallerys">
-                    <img src="https://textorialpark.com/img/enjoy/7m.jpg" alt="Image" style="max-width:100%;">
-                </a>
-            </div>
-            <div class="col-3">
-                <a href="https://textorialpark.com/img/enjoy/8m.jpg" data-fancybox="gallerys">
-                    <img src="https://textorialpark.com/img/enjoy/8m.jpg" alt="Image" style="max-width:100%;">
-                </a>
-            </div>
-
-        </div>
-    </div>
-
-    <section>
-        <div class="container">
-            <div class="row">
-                <div class="col-3"></div>
-                <div class="col-9 text-container text-justify">
-                    <p><span class="work-quote-icon me-3" style="color:#85202f"><sup>,,</sup></span>Pijąc kawę w jednej z&nbsp;nowych restauracji na Księżym Młynie, spacerując między odnowionymi czynszówkami łódzkiego osiedla, widząc młodych ludzi wokół biurowców Textorial Park trudno nie odnieść wrażenia, że&nbsp;historia odradza się w tym miejscu z&nbsp;nową energią. Zależy nam, aby była to przestrzeń, którą wybiorą najemcy i&nbsp;w&nbsp;której dobrze poczują się pracownicy ceniący komfort pracy oraz wygodę związaną z dostępnością usług. W&nbsp;swoich działaniach wdrażamy idee placemakingu, chcemy, aby to miejsce stało się wyznacznikiem stylu życia i&nbsp;pracy, a&nbsp;Łódź wzbogaciła się o&nbsp;kolejną, ciekawą przestrzeń miejską. <span class="work-quote-icon" style="color:#85202f"><sup>,,</sup></span></p>
-                    <div class="work-quote-author f400" style="color:#333333">Anna Banaś</div>
-                    <div class="work-quote-function f400" style="color:#333333">prezes St. Paul's Developments Polska</div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section>
-        <div class="container">
-            <div class="row">
-                <div class="col-12 position-relative">
-                    <div class="text-line bg-red text-center">TEXTORIAL <font class="f400">PARK II</font></div>
-                    <img src="https://textorialpark.com/img/enjoy1xx.jpg" class="img-fluid" alt="Textorial Park II">
-                    <div class="lines-box-left text-left">
-                        <span class="line-box line-box-left bg-red">9 tys. m<sup>2</sup> przestrzeni do odpoczynku</span><br>
-                        <span class="line-box line-box-left bg-red">fitness, SPA &amp; wellness</span><br class="moffxs">
-                        <span class="line-box line-box-left bg-red">restauracje</span><br class="moffxs">
-                        <span class="line-box line-box-left bg-red">sklepy</span><br class="moffxs">
-                        <span class="line-box line-box-left bg-red">biblioteka</span><br class="moffxs">
-                        <span class="line-box line-box-left bg-red">popularne trasy biegowe</span><br class="moffxs">
-                    </div>
-
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section>
-        <div class="container">
-            <div class="row">
-                <div class="col-12 position-relative">
-
-                    <img src="https://textorialpark.com/img/enjoy7.jpg" class="img-fluid" alt="Enjoy">
-                    <div class="enjoy-bike-right">
-                        <p>Projektując Textorial Park&nbsp;II pomyśleliśmy o&nbsp;tym, co ważne dla przyszłych użytkowników.</p>
-                        <p>Łódź posiada już ponad 150&nbsp;km ścieżek rowerowych.</p>
-                        <p>Opracowaliśmy więc szereg udogodnień dla rowerzystów.</p>
-                    </div>
-
-                    <div class="lines-box-left enjoy-bike text-left">
-                        <span class="line-box line-box-left bg-red">prysznice dla aktywnych</span><br>
-                        <span class="line-box line-box-left bg-red">zadaszone miejsca dla rowerów<br>na terenie kompleksu</span><br>
-                        <span class="line-box line-box-left bg-red">oraz w garażu podziemnym</span><br>
-                        <span class="line-box line-box-left bg-red">mobilna stacja obsługi rowerów</span><br>
+    <section class="container container-dashed">
+        <div class="row justify-content-center">
+            <div class="col-10">
+                <div class="row">
+                    <div class="col-12 position-relative">
+                        <div class="text-line text-line-right bg-red text-center">PRZYJAZNA <font class="f400">PRZESTRZEŃ MIEJSKA</font></div>
+                        <img src="https://textorialpark.com/img/oferta2bg.jpg" class="img-fluid" alt="Przyjazna przestrzeń miejska">
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
 
-    <section>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6 work-sec-lead" style="color:#85202f">
-                    <div class="row">
-                        <div class="col-md-9">
-                            <p>W Textorial Park II</p>
-                            <p>planowana jest stacja</p>
-                            <p>Łódzkiego Roweru Publicznego</p>
+            <div class="col-10 slick-carousel mt-5 pt-5">
+                <div class="row">
+                    <div class="col-3">
+                        <a href="https://textorialpark.com/img/enjoy/1m.jpeg" data-fancybox="gallerys">
+                            <img src="https://textorialpark.com/img/enjoy/1m.jpeg" alt="Image" style="max-width:100%;">
+                        </a>
+                    </div>
+                    <div class="col-3">
+                        <a href="https://textorialpark.com/img/enjoy/2m.jpeg" data-fancybox="gallerys">
+                            <img src="https://textorialpark.com/img/enjoy/2m.jpeg" alt="Image" style="max-width:100%;">
+                        </a>
+                    </div>
+                    <div class="col-3">
+                        <a href="https://textorialpark.com/img/enjoy/3m.jpeg" data-fancybox="gallerys">
+                            <img src="https://textorialpark.com/img/enjoy/3m.jpeg" alt="Image" style="max-width:100%;">
+                        </a>
+                    </div>
+                    <div class="col-3">
+                        <a href="https://textorialpark.com/img/enjoy/4m.jpeg" data-fancybox="gallerys">
+                            <img src="https://textorialpark.com/img/enjoy/4m.jpeg" alt="Image" style="max-width:100%;">
+                        </a>
+                    </div>
+
+                    <div class="col-3">
+                        <a href="https://textorialpark.com/img/enjoy/5m.jpg" data-fancybox="gallerys">
+                            <img src="https://textorialpark.com/img/enjoy/5m.jpg" alt="Image" style="max-width:100%;">
+                        </a>
+                    </div>
+                    <div class="col-3">
+                        <a href="https://textorialpark.com/img/enjoy/6m.jpg" data-fancybox="gallerys">
+                            <img src="https://textorialpark.com/img/enjoy/6m.jpg" alt="Image" style="max-width:100%;">
+                        </a>
+                    </div>
+                    <div class="col-3">
+                        <a href="https://textorialpark.com/img/enjoy/7m.jpg" data-fancybox="gallerys">
+                            <img src="https://textorialpark.com/img/enjoy/7m.jpg" alt="Image" style="max-width:100%;">
+                        </a>
+                    </div>
+                    <div class="col-3">
+                        <a href="https://textorialpark.com/img/enjoy/8m.jpg" data-fancybox="gallerys">
+                            <img src="https://textorialpark.com/img/enjoy/8m.jpg" alt="Image" style="max-width:100%;">
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-10">
+                <div class="row mt-5 pt-5">
+                    <div class="col-3"></div>
+                    <div class="col-9 text-container text-justify">
+                        <p><span class="work-quote-icon me-3" style="color:#85202f"><sup>,,</sup></span>Pijąc kawę w jednej z&nbsp;nowych restauracji na Księżym Młynie, spacerując między odnowionymi czynszówkami łódzkiego osiedla, widząc młodych ludzi wokół biurowców Textorial Park trudno nie odnieść wrażenia, że&nbsp;historia odradza się w tym miejscu z&nbsp;nową energią. Zależy nam, aby była to przestrzeń, którą wybiorą najemcy i&nbsp;w&nbsp;której dobrze poczują się pracownicy ceniący komfort pracy oraz wygodę związaną z dostępnością usług. W&nbsp;swoich działaniach wdrażamy idee placemakingu, chcemy, aby to miejsce stało się wyznacznikiem stylu życia i&nbsp;pracy, a&nbsp;Łódź wzbogaciła się o&nbsp;kolejną, ciekawą przestrzeń miejską. <span class="work-quote-icon" style="color:#85202f"><sup>,,</sup></span></p>
+                        <div class="work-quote-author f400" style="color:#333333">Anna Banaś</div>
+                        <div class="work-quote-function f400" style="color:#333333">prezes St. Paul's Developments Polska</div>
+                    </div>
+                </div>
+
+                <div class="row mt-5 pt-5">
+                    <div class="col-12 position-relative">
+                        <div class="text-line bg-red text-center">TEXTORIAL <font class="f400">PARK II</font></div>
+                        <img src="https://textorialpark.com/img/enjoy1xx.jpg" class="img-fluid" alt="Textorial Park II">
+                        <div class="lines-box-left text-left">
+                            <span class="line-box line-box-left bg-red">9 tys. m<sup>2</sup> przestrzeni do odpoczynku</span><br>
+                            <span class="line-box line-box-left bg-red">fitness, SPA &amp; wellness</span><br class="moffxs">
+                            <span class="line-box line-box-left bg-red">restauracje</span><br class="moffxs">
+                            <span class="line-box line-box-left bg-red">sklepy</span><br class="moffxs">
+                            <span class="line-box line-box-left bg-red">biblioteka</span><br class="moffxs">
+                            <span class="line-box line-box-left bg-red">popularne trasy biegowe</span><br class="moffxs">
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="row mt-5 pt-5">
+                    <div class="col-12 position-relative">
+                        <img src="https://textorialpark.com/img/enjoy7.jpg" class="img-fluid" alt="Enjoy">
+                        <div class="enjoy-bike-right">
+                            <p>Projektując Textorial Park&nbsp;II pomyśleliśmy o&nbsp;tym, co ważne dla przyszłych użytkowników.</p>
+                            <p>Łódź posiada już ponad 150&nbsp;km ścieżek rowerowych.</p>
+                            <p>Opracowaliśmy więc szereg udogodnień dla rowerzystów.</p>
+                        </div>
+
+                        <div class="lines-box-left enjoy-bike text-left">
+                            <span class="line-box line-box-left bg-red">prysznice dla aktywnych</span><br>
+                            <span class="line-box line-box-left bg-red">zadaszone miejsca dla rowerów<br>na terenie kompleksu</span><br>
+                            <span class="line-box line-box-left bg-red">oraz w garażu podziemnym</span><br>
+                            <span class="line-box line-box-left bg-red">mobilna stacja obsługi rowerów</span><br>
                         </div>
                     </div>
-                    <br>
-                    <img src="https://textorialpark.com/img/enjoy9.png" class="img-fluid" alt="rower">
                 </div>
 
-                <div class="col-lg-6">
-                    <img src="https://textorialpark.com/img/enjoy8.jpg" class="img-fluid" alt="Łódzki rower publiczny">
+                <div class="row mt-5 pt-5">
+                    <div class="col-lg-6 work-sec-lead" style="color:#85202f">
+                        <div class="row">
+                            <div class="col-md-9">
+                                <p>W Textorial Park II</p>
+                                <p>planowana jest stacja</p>
+                                <p>Łódzkiego Roweru Publicznego</p>
+                            </div>
+                        </div>
+                        <br>
+                        <img src="https://textorialpark.com/img/enjoy9.png" class="img-fluid" alt="rower">
+                    </div>
+
+                    <div class="col-lg-6">
+                        <img src="https://textorialpark.com/img/enjoy8.jpg" class="img-fluid" alt="Łódzki rower publiczny">
+                    </div>
                 </div>
             </div>
         </div>

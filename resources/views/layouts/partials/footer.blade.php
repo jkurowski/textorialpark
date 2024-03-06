@@ -8,7 +8,7 @@
     </div>
 </div>
 
-<div class="container-fluid footer">
+<div class="container footer">
     <div class="row">
         <div class="col-12 footbgbox text-right">
             <div class="footer-in">
@@ -38,8 +38,8 @@
                     <p><a href="mailto:biuro@st-pauls.com.pl">biuro@st-pauls.com.pl</a></p>
                     <p><a href="tel:+48422908003">+48 42 290 80 03</a></p>
                     <p><a href="tel:+48605273339">+48 605 273 339</a></p>
-
                 </div>
+
             </div>
         </div>
     </div>

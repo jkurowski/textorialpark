@@ -145,10 +145,16 @@ a:hover {
 .blog-list article {
   margin-bottom: 80px;
   padding-bottom: 80px;
-  border-bottom: 1px dashed #000;
+  border-bottom: 2px dashed #9a192b;
 }
 .blog-list article:last-child {
   margin-bottom: 0;
+}
+#mainNews {
+  background: #e2c9c5;
+}
+#mainNews section {
+  padding-bottom: 60px;
 }
 .header-holder {
   height: 151px;
@@ -568,7 +574,7 @@ html.swipebox-html.swipebox-touch {
   border: 0;
 }
 .najemcy-text {
-  padding: 35px 40px;
+  padding: 25px 30px;
   text-align: left !important;
 }
 .najemcy-text a {
@@ -910,19 +916,21 @@ a.nav-link:hover,
 .pobierz-pdf:hover {
   border: 2px dashed #85212e;
 }
+.container-dashed {
+  background: url('../images/dashed.png') repeat-y;
+}
 .footer {
-  margin-bottom: 80px;
+  margin-bottom: 50px;
 }
 .footbgbox {
-  background: url('../images/footbg.png') no-repeat top left;
-  height: 424px;
+  background: url('../images/footbg.png') no-repeat top -90px left;
+  height: 332px;
 }
 .footer-in {
   width: 100%;
   display: table;
-  margin-top: 90px;
+  margin-top: 45px;
   padding-left: 150px;
-  padding-right: 150px;
 }
 .footer-space {
   width: 34%;
@@ -1074,9 +1082,9 @@ a.nav-link:hover,
   margin-left: -40px;
   width: 30%;
   color: #ffffff;
-  font-size: 23px;
+  font-size: 20px;
   font-weight: 300;
-  line-height: 34px;
+  line-height: 30px;
   text-align: left;
 }
 .box-r-b {
@@ -1112,9 +1120,9 @@ a.nav-link:hover,
   padding-left: 40px;
 }
 .text-container {
-  font-size: 22px;
+  font-size: 18px;
   font-weight: 300;
-  line-height: 31px;
+  line-height: 27px;
   text-align: left;
 }
 .live-atuty-box {

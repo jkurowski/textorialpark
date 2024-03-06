@@ -15,13 +15,14 @@ Route::get('routes', function() {
 
 Route::group(['namespace' => 'Front', 'prefix' => '{locale?}', 'where' => ['locale' => '(?!admin)*[a-z]{2}'],], function() {
     Route::get('/', 'IndexController@index')->name('index');
-    Route::get('/najemcy/', 'Renters\IndexController@index');
+    Route::get('/najemcy/', 'Renters\IndexController@index')->name('renters');
     Route::get('/live/', 'Static\IndexController@live')->name('front.live');
     Route::get('/work/', 'Static\IndexController@work')->name('front.work');
     Route::get('/enjoy/', 'Static\IndexController@enjoy')->name('front.enjoy');
 
     Route::get('/historia/', 'Static\IndexController@history')->name('front.history');
     Route::get('/kampus/', 'Static\IndexController@kampus')->name('front.kampus');
+    Route::get('/do-wynajecia/', 'Static\IndexController@plan')->name('front.plan');
 
     // Articles
     Route::group(['prefix' => 'newsboard', 'as' => 'front.news.'], function() {
@@ -44,5 +45,5 @@ Route::group(['namespace' => 'Front', 'prefix' => '{locale?}', 'where' => ['loca
         Route::post('/update/{inline}', 'InlineController@update')->name('update');
     });
 
-    Route::get('{uri}', 'MenuController@index')->where('uri', '([A-Za-z0-9\-\/]+)');
+    Route::get('{uri}', 'MenuController@index')->where('uri', '([A-Za-z0-9\-\/]+)')->name('static');
 });

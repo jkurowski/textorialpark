@@ -37,4 +37,10 @@ class IndexController extends Controller
         $page = Page::find(14);
         return view('front.static.kampus', compact('page'));
     }
+
+    public function plan()
+    {
+        $page = Page::find(15);
+        return view('front.static.plan', compact('page'));
+    }
 }
