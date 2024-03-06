@@ -1,6 +1,7 @@
 <div class="container">
     <div class="row d-flex justify-content-center">
-        <div class="col-12">
+        <div class="col-12 position-relative">
+            <h2 class="text-center mb-5" style="width:100% !important;font-weight:300;color:#ffffff">NAPISZ DO NAS</h2>
             @if (session('success'))
                 <div class="alert alert-success border-0">
                     {{ session('success') }}
