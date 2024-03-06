@@ -697,7 +697,8 @@ html.swipebox-html.swipebox-touch {
   text-transform: uppercase;
   letter-spacing: 1px;
 }
-a.nav-link:hover {
+a.nav-link:hover,
+.active a.nav-link {
   border-bottom: 1px dashed #ffffff;
 }
 .arrow {

@@ -11,15 +11,33 @@
 
             <div class="collapse navbar-collapse justify-content-end" id="navbarResponsive">
                 <ul class="navbar-nav">
-                    <li class="nav-item"><a class="nav-link" href="/">HOME</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="/pl/kampus/">KAMPUS</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="/pl/do-wynajecia/">DO WYNAJĘCIA</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="/pl/spacer-wirtualny/">SPACER WIRTUALNY</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="/pl/newsboard/">NEWSBOARD</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="/pl/historia/">HISTORIA</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="/pl/najemcy/">NAJEMCY</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="/pl/o-nas/">INWESTOR</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="/pl/kontakt/">KONTAKT</a></li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="/pl/kampus/">KAMPUS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="/pl/do-wynajecia/">DO WYNAJĘCIA</a>
+                    </li>
+                    <li class="nav-item @isset($page) @if($page->slug == 'spacer-wirtualny') active @endif @endisset">
+                        <a class="nav-link js-scroll-trigger" href="/pl/spacer-wirtualny/">SPACER WIRTUALNY</a>
+                    </li>
+                    <li class="nav-item @isset($page) @if($page->slug == 'newsboard') active @endif @endisset">
+                        <a class="nav-link js-scroll-trigger" href="/pl/newsboard/">NEWSBOARD</a>
+                    </li>
+                    <li class="nav-item {{ Request::routeIs('front.history') ? 'active' : '' }}">
+                        <a class="nav-link js-scroll-trigger" href="/pl/historia/">HISTORIA</a>
+                    </li>
+                    <li class="nav-item @isset($page) @if($page->slug == 'najemcy') active @endif @endisset"
+                    ><a class="nav-link js-scroll-trigger" href="/pl/najemcy/">NAJEMCY</a>
+                    </li>
+                    <li class="nav-item @isset($page) @if($page->slug == 'o-nas') active @endif @endisset">
+                        <a class="nav-link js-scroll-trigger" href="/pl/o-nas/">INWESTOR</a>
+                    </li>
+                    <li class="nav-item {{ Request::routeIs('contact') ? 'active' : '' }}">
+                        <a class="nav-link js-scroll-trigger" href="/pl/kontakt/">KONTAKT</a>
+                    </li>
                     <li class="nav-item">
                         <a class="nav-link js-scroll-trigger lang-pl" href="#"><b>PL</b></a>
                     </li>

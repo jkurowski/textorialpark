@@ -28,7 +28,7 @@ class IndexController extends Controller
 
     public function history()
     {
-        $page = Page::find(9);
+        $page = Page::find(14);
         return view('front.static.history', compact('page'));
     }
 }
