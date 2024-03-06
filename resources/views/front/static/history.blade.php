@@ -5,7 +5,7 @@
 @section('seo_description', '')
 
 @section('pageheader')
-    @include('layouts.partials.page-header', ['title' => 'Live', 'header_file' => 'hpbg2.jpg'])
+    @include('layouts.partials.page-header', ['title' => 'Historia', 'header_file' => 'historia-bg.jpg'])
 @stop
 
 @section('content')
@@ -70,27 +70,13 @@
         </div>
     </section>
 
-    <section class="pt-0">
+    <section class="pt-0 pb-4">
         <div class="container">
             <div class="row">
                 <div class="col-12 position-relative">
                     <img src="https://textorialpark.com/img/historia-n4.jpg" class="w-100" alt="historyczny budynek z cegły">
                     <div class="text-box bg-orange">
                         <p>Historyczny budynek z cegły zyskał również współczesną erratę. Nowy obiekt z parkingiem podziemnym wzniesiono ze współczesnych materiałów, w pełni jednak nawiązując do charakteru i klimatu poprzemysłowej zabudowy miejsca. Ceglane wątki dawnego magazynu przetworzono jako odcisk w betonowych panelach elewacyjnych o szarej barwie. Dzięki temu wyraźna pozostała proweniencja stylistyczna nowego budynku, przy zachowaniu czytelnych różnic wynikających z okresu w jakim powstawały oba obiekty.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="pt-0 pb-4">
-        <div class="container">
-            <div class="row">
-                <div class="col-12 position-relative">
-                    <div class="text-line bg-red text-center">BUDUJEMY <font class="f400">PRZYSZŁOŚĆ</font></div>
-                    <img src="https://textorialpark.com/img/historia2.jpg" class="img-fluid" alt="Budujemy przyszłość">
-                    <div class="text-box bg-red">
-                        <p>Z tej idei czerpie Textorial Park II, wokół którego zaprojektowano ciekawą, wielofunkcyjną przestrzeń miejską z&nbsp;małą architekturą, zachęcającą zarówno pracowników biur, jak&nbsp;i&nbsp;okolicznych mieszkańców do wspólnego spędzania czasu. Klimatyczne zakątki Księżego Młyna, otoczenie ceglanych magazynów tekstylnych i&nbsp;nowych budynków, tworzą nie tylko atrakcyjne miejsce pracy, ale też relaksu w&nbsp;stylu slow.</p>
                     </div>
                 </div>
             </div>
