@@ -21,6 +21,7 @@ Route::group(['namespace' => 'Front', 'prefix' => '{locale?}', 'where' => ['loca
     Route::get('/enjoy/', 'Static\IndexController@enjoy')->name('front.enjoy');
 
     Route::get('/historia/', 'Static\IndexController@history')->name('front.history');
+    Route::get('/kampus/', 'Static\IndexController@kampus')->name('front.kampus');
 
     // Articles
     Route::group(['prefix' => 'newsboard', 'as' => 'front.news.'], function() {
