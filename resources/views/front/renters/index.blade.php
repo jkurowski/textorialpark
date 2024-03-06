@@ -19,7 +19,7 @@
                         </div>
                         <div class="col-lg-7 p-0">
                             <div class="mb-0">
-                                <img src="{{ asset('/uploads/renters/'.$r->file) }}" class="img-fluid" alt="{{ $r->name }}">
+                                <img src="{{ asset('/uploads/renters/'.$r->file) }}" class="w-100" alt="{{ $r->name }}">
                             </div>
                         </div>
                         <div class="col-lg-5 text-container text-justify najemcy-text d-flex align-items-center" style="background:{{ $r->bgcolor }};color:#fff">
