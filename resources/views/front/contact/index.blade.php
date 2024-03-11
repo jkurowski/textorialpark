@@ -38,7 +38,7 @@
                             </div>
                             <div class="text-line bg-red text-center kontakt-line">
                                 <a href="https://www.youtube.com/watch?v=ufgrXoJvZ-E" class="swipebox" style="color:#ffffff">
-                                    <strong class="me-1">FILM</strong>VIDEO
+                                    <strong class="me-1">FILM VIDEO </strong>KSIĘŻY MŁYN
                                 </a>
                             </div>
                             <div class="text-line bg-red text-center kontakt-line">
