@@ -27,10 +27,6 @@
                                     @include('form-elements.html-select', ['label' => 'Status', 'name' => 'status', 'selected' => $entry->status, 'select' => ['1' => 'Pokaż na liście', '0' => 'Ukryj na liście']])
                                 @endif
                                 @include('form-elements.html-input-text', ['label' => 'Nazwa', 'name' => 'name', 'value' => $entry->name, 'required' => 1])
-                                @if(!Request::get('lang'))
-                                    @include('form-elements.html-input-file', ['label' => 'Zdjęcie', 'sublabel' => '(wymiary: '.config('images.gallery.big_width').'px / '.config('images.gallery.big_height').'px)', 'name' => 'file'])
-                                    @include('form-elements.textarea', ['label' => 'Opis', 'name' => 'text', 'value' => $entry->text])
-                                @endif
                             </div>
                         </div>
                     </div>

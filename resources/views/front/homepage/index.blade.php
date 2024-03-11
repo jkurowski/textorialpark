@@ -86,14 +86,32 @@
                     <div class="row">
                         <div class="col-12 position-relative">
                             <div class="text-line text-line-right bg-red text-center">KAMPUS <font class="f400">TEXTORIAL PARK</font></div>
-                            <img src="https://textorialpark.com/img/hpgal1.jpg" class="img-fluid" alt="Kampus Textorial Park">
+                            <img src="{{ asset('images/hpgal1.jpg') }}" class="img-fluid" alt="Kampus Textorial Park">
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-12 slick-carousel mt-4">
+                            <div class="row">
+                                @foreach($images as $p)
+                                    <div class="col-3">
+                                        <a href="/uploads/gallery/images/{{$p->file}}" class="swipebox" rel="gallery-1" title="">
+                                            <picture>
+                                                <source type="image/webp" srcset="{{asset('uploads/gallery/images/thumbs/webp/'.$p->file_webp) }}">
+                                                <source type="image/jpeg" srcset="{{asset('uploads/gallery/images/thumbs/'.$p->file) }}">
+                                                <img src="{{asset('uploads/gallery/images/thumbs/'.$p->file) }}" alt="{{ $p->name }}">
+                                            </picture>
+                                        </a>
+                                    </div>
+                                @endforeach
+                            </div>
                         </div>
                     </div>
 
                     <div class="row mt-5 pt-5">
                         <div class="col-12">
                             <a href="https://www.youtube.com/watch?v=1oHo6VofwD0" data-lity="">
-                                <img src="https://textorialpark.com/img/hpvideo2x.jpg" class="img-fluid" alt="Zobacz video">
+                                <img src="{{ asset('images/hpvideo2x.jpg') }}" class="img-fluid" alt="Zobacz video">
                             </a>
                         </div>
                     </div>
@@ -102,3 +120,19 @@
         </section>
     </div>
 @endsection
+@push('scripts')
+    <script src="{{ asset('js/slick.js') }}" charset="utf-8"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $(".slick-carousel .row").slick({
+                infinite: true,
+                slidesToShow: 4,
+                slidesToScroll: 1,
+                arrows: true,
+                autoplay: true,
+                autoplaySpeed: 4000,
+                dots: false,
+            });
+        });
+    </script>
+@endpush

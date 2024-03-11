@@ -11578,7 +11578,7 @@ body[data-aos-easing=ease-in-out-quart] [data-aos] {
   display: none;
 }
 div[class*='col-'].slick-slide {
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 12px;
+  padding-right: 12px;
 }
 /*# sourceMappingURL=styles.css.map */
