@@ -110,7 +110,7 @@
 
                     <div class="row mt-5 pt-5">
                         <div class="col-12">
-                            <a href="https://www.youtube.com/watch?v=1oHo6VofwD0" data-lity="">
+                            <a href="https://www.youtube.com/watch?v=ufgrXoJvZ-E" class="swipebox" rel="gallery-2" title="">
                                 <img src="{{ asset('images/hpvideo2x.jpg') }}" class="img-fluid" alt="Zobacz video">
                             </a>
                         </div>
