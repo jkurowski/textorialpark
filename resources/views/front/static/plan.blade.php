@@ -9,7 +9,7 @@
 @stop
 
 @section('content')
-    <section class="container container-dashed">
+    <section class="container container-dashed" id="content">
         <div class="row">
             <div class="col-12 text-center d-flex justify-content-center">
                 <img src="{{ asset('images/plan/1-budynek-b.png') }}" alt="">

@@ -929,7 +929,7 @@ a.nav-link:hover,
 .footer-in {
   width: 100%;
   display: table;
-  margin-top: 45px;
+  margin-top: 35px;
   padding-left: 150px;
 }
 .footer-space {
@@ -938,7 +938,7 @@ a.nav-link:hover,
   vertical-align: bottom;
 }
 .footer-col-1 {
-  width: 13%;
+  width: 16%;
   display: table-cell;
   vertical-align: bottom;
   text-align: left;
@@ -1033,6 +1033,10 @@ a.nav-link:hover,
 }
 .bg-orange {
   background-color: #ff6600;
+}
+.bg-orange a,
+.bg-orange a:hover {
+  color: white;
 }
 .bg-green {
   background-color: #89bd26;

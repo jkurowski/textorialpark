@@ -14,17 +14,20 @@
             <div class="footer-in">
                 <div class="footer-space">&nbsp;</div>
                 <div class="footer-col-1">
-                    <a href="https://textorialpark.com/" class="footer-link">HOME</a>
-                    <a href="/live" class="footer-link" style="display:inline-block">live</a>
-                    <font style="color:#73859c">/</font> <a href="/work/" class="footer-link d-inline">work</a>
-                    <font style="color:#73859c">/</font> <a href="/enjoy/" class="footer-link d-inline">enjoy</a>
-                    <a href="/oferta-2/" class="footer-link">OFERTA</a>
-                    <a href="/istniejacy-kampus/" class="footer-link d-inline">istniejący kampus</a>
-                    <a href="/oferta/" class="footer-link d-inline">planowany etap II</a>
-                    <a href="/historia/" class="footer-link">HISTORIA</a>
-                    <a href="/najemcy/" class="footer-link">NAJEMCY</a>
-                    <a href="/onas/" class="footer-link">INWESTOR</a>
-                    <a href="/kontakt/" class="footer-link">KONTAKT</a>
+                    <a href="/" class="footer-link">HOME</a>
+                    <a href="{{ route('front.live') }}" class="footer-link" style="display:inline-block">live</a>
+                    <font style="color:#73859c">/</font>
+                    <a href="{{ route('front.work') }}" class="footer-link d-inline">work</a>
+                    <font style="color:#73859c">/</font>
+                    <a href="{{ route('front.enjoy') }}" class="footer-link d-inline">enjoy</a>
+                    <a href="{{ route('front.kampus') }}" class="footer-link b-block">KAMPUS</a>
+                    <a href="{{ route('front.plan') }}" class="footer-link d-block">DO WYNAJĘCIA</a>
+                    <a href="{{ route('static', ['uri' => 'spacer-wirtualny']) }}" class="footer-link d-block">SPACER WIRTUALNY</a>
+                    <a href="{{ route('front.news.index') }}" class="footer-link d-block">NEWSBOARD</a>
+                    <a href="{{ route('front.history') }}" class="footer-link d-block">HISTORIA</a>
+                    <a href="{{ route('renters') }}" class="footer-link d-block">NAJEMCY</a>
+                    <a href="{{ route('static', ['uri' => 'o-nas']) }}" class="footer-link d-block">INWESTOR</a>
+                    <a href="{{ route('contact') }}" class="footer-link d-block">KONTAKT</a>
                 </div>
 
                 <div class="footer-col-2">

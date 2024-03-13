@@ -9,7 +9,7 @@
 @stop
 
 @section('content')
-    <section class="container container-dashed" id="wideo">
+    <section class="container container-dashed" id="content">
         <div class="row justify-content-center">
             <div class="col-10">
                 <div class="row">

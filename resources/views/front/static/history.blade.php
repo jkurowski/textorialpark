@@ -9,7 +9,7 @@
 @stop
 
 @section('content')
-    <section class="container container-dashed">
+    <section id="content" class="container container-dashed">
         <div class="row justify-content-center">
             <div class="col-10">
                 <div class="row">
@@ -70,42 +70,42 @@
             <div class="col-10 slick-carousel mt-5">
                 <div class="row">
                     <div class="col-3">
-                        <a href="https://textorialpark.com/img/tex1.jpg" data-fancybox="gallery">
+                        <a href="https://textorialpark.com/img/tex1.jpg" class="swipebox">
                             <img src="https://textorialpark.com/img/tex1.jpg" alt="Image" style="max-width:100%;">
                         </a>
                     </div>
                     <div class="col-3">
-                        <a href="https://textorialpark.com/img/tex2.jpg" data-fancybox="gallery">
+                        <a href="https://textorialpark.com/img/tex2.jpg" class="swipebox">
                             <img src="https://textorialpark.com/img/tex2.jpg" alt="Image" style="max-width:100%;">
                         </a>
                     </div>
                     <div class="col-3">
-                        <a href="https://textorialpark.com/img/tex3.jpg" data-fancybox="gallery">
+                        <a href="https://textorialpark.com/img/tex3.jpg" class="swipebox">
                             <img src="https://textorialpark.com/img/tex3.jpg" alt="Image" style="max-width:100%;">
                         </a>
                     </div>
                     <div class="col-3">
-                        <a href="https://textorialpark.com/img/tex4.jpg" data-fancybox="gallery">
+                        <a href="https://textorialpark.com/img/tex4.jpg" class="swipebox">
                             <img src="https://textorialpark.com/img/tex4.jpg" alt="Image" style="max-width:100%;">
                         </a>
                     </div>
                     <div class="col-3">
-                        <a href="https://textorialpark.com/img/tex5.jpg" data-fancybox="gallery">
+                        <a href="https://textorialpark.com/img/tex5.jpg" class="swipebox">
                             <img src="https://textorialpark.com/img/tex5.jpg" alt="Image" style="max-width:100%;">
                         </a>
                     </div>
                     <div class="col-3">
-                        <a href="https://textorialpark.com/img/tex6.jpg" data-fancybox="gallery">
+                        <a href="https://textorialpark.com/img/tex6.jpg" class="swipebox">
                             <img src="https://textorialpark.com/img/tex6.jpg" alt="Image" style="max-width:100%;">
                         </a>
                     </div>
                     <div class="col-3">
-                        <a href="https://textorialpark.com/img/tex7.jpg" data-fancybox="gallery">
+                        <a href="https://textorialpark.com/img/tex7.jpg" class="swipebox">
                             <img src="https://textorialpark.com/img/tex7.jpg" alt="Image" style="max-width:100%;">
                         </a>
                     </div>
                     <div class="col-3">
-                        <a href="https://textorialpark.com/img/tex8.jpg" data-fancybox="gallery">
+                        <a href="https://textorialpark.com/img/tex8.jpg" class="swipebox">
                             <img src="https://textorialpark.com/img/tex8.jpg" alt="Image" style="max-width:100%;">
                         </a>
                     </div>

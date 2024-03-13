@@ -9,6 +9,7 @@
 @stop
 
 @section('content')
+    <div id="content"></div>
     <section id="newsboard" class="container container-dashed blog-list">
         <div class="row justify-content-center">
             <div class="col-10">

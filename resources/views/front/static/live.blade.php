@@ -5,11 +5,11 @@
 @section('seo_description', '')
 
 @section('pageheader')
-    @include('layouts.partials.page-header', ['title' => 'Live', 'header_file' => 'hpbg2.jpg'])
+    @include('layouts.partials.page-header', ['title' => 'Live', 'header_file' => 'livebg.jpg'])
 @stop
 
 @section('content')
-    <section class="container container-dashed">
+    <section id="content" class="container container-dashed">
         <div class="row justify-content-center">
             <div class="col-10">
                 <div class="row">

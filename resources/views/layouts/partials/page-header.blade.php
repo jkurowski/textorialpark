@@ -13,7 +13,7 @@
     </div>
 
     <div class="scrollsection">
-        <a class="arrow bounce scroll" href="#video" data-offset="0"></a>
+        <a class="arrow bounce scroll" href="#content" data-offset="80"></a>
     </div>
 
     <div class="header-social">

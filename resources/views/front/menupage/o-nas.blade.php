@@ -1,3 +1,4 @@
+<div id="content"></div>
 <section id="video" class="container container-dashed">
     <div class="row justify-content-center">
         <div class="col-10">

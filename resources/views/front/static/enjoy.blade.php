@@ -9,7 +9,7 @@
 @stop
 
 @section('content')
-    <section class="container container-dashed">
+    <section id="content" class="container container-dashed">
         <div class="row justify-content-center">
             <div class="col-10">
                 <div class="row">
@@ -23,43 +23,43 @@
             <div class="col-10 slick-carousel mt-5 pt-5">
                 <div class="row">
                     <div class="col-3">
-                        <a href="https://textorialpark.com/img/enjoy/1m.jpeg" data-fancybox="gallerys">
+                        <a href="https://textorialpark.com/img/enjoy/1m.jpeg" class="swipebox" rel="gal-2">
                             <img src="https://textorialpark.com/img/enjoy/1m.jpeg" alt="Image" style="max-width:100%;">
                         </a>
                     </div>
                     <div class="col-3">
-                        <a href="https://textorialpark.com/img/enjoy/2m.jpeg" data-fancybox="gallerys">
+                        <a href="https://textorialpark.com/img/enjoy/2m.jpeg" class="swipebox" rel="gal-2">
                             <img src="https://textorialpark.com/img/enjoy/2m.jpeg" alt="Image" style="max-width:100%;">
                         </a>
                     </div>
                     <div class="col-3">
-                        <a href="https://textorialpark.com/img/enjoy/3m.jpeg" data-fancybox="gallerys">
+                        <a href="https://textorialpark.com/img/enjoy/3m.jpeg" class="swipebox" rel="gal-2">
                             <img src="https://textorialpark.com/img/enjoy/3m.jpeg" alt="Image" style="max-width:100%;">
                         </a>
                     </div>
                     <div class="col-3">
-                        <a href="https://textorialpark.com/img/enjoy/4m.jpeg" data-fancybox="gallerys">
+                        <a href="https://textorialpark.com/img/enjoy/4m.jpeg" class="swipebox" rel="gal-2">
                             <img src="https://textorialpark.com/img/enjoy/4m.jpeg" alt="Image" style="max-width:100%;">
                         </a>
                     </div>
 
                     <div class="col-3">
-                        <a href="https://textorialpark.com/img/enjoy/5m.jpg" data-fancybox="gallerys">
+                        <a href="https://textorialpark.com/img/enjoy/5m.jpg" class="swipebox" rel="gal-2">
                             <img src="https://textorialpark.com/img/enjoy/5m.jpg" alt="Image" style="max-width:100%;">
                         </a>
                     </div>
                     <div class="col-3">
-                        <a href="https://textorialpark.com/img/enjoy/6m.jpg" data-fancybox="gallerys">
+                        <a href="https://textorialpark.com/img/enjoy/6m.jpg" class="swipebox" rel="gal-2">
                             <img src="https://textorialpark.com/img/enjoy/6m.jpg" alt="Image" style="max-width:100%;">
                         </a>
                     </div>
                     <div class="col-3">
-                        <a href="https://textorialpark.com/img/enjoy/7m.jpg" data-fancybox="gallerys">
+                        <a href="https://textorialpark.com/img/enjoy/7m.jpg" class="swipebox" rel="gal-2">
                             <img src="https://textorialpark.com/img/enjoy/7m.jpg" alt="Image" style="max-width:100%;">
                         </a>
                     </div>
                     <div class="col-3">
-                        <a href="https://textorialpark.com/img/enjoy/8m.jpg" data-fancybox="gallerys">
+                        <a href="https://textorialpark.com/img/enjoy/8m.jpg" class="swipebox" rel="gal-2">
                             <img src="https://textorialpark.com/img/enjoy/8m.jpg" alt="Image" style="max-width:100%;">
                         </a>
                     </div>
@@ -140,31 +140,31 @@
             </div>
             <div class="row pt-5 mt-3">
                 <div class="col-12 position-relative d-flex flex-wrap justify-content-center">
-                    <a href="https://textorialpark.com/img/polaroid-1b.jpg" data-fancybox="gallery">
+                    <a href="https://textorialpark.com/img/polaroid-1b.jpg" class="swipebox" rel="gal-1">
                         <img src="https://textorialpark.com/img/polaroid-1.png" class="polar polaroid-1" alt="Textorial Park II">
                     </a>
-                    <a href="https://textorialpark.com/img/polaroid-2b.jpg" data-fancybox="gallery">
+                    <a href="https://textorialpark.com/img/polaroid-2b.jpg" class="swipebox" rel="gal-1">
                         <img src="https://textorialpark.com/img/polaroid-2.png" class="polar polaroid-2" alt="Textorial Park II">
                     </a>
-                    <a href="https://textorialpark.com/img/polaroid-3b.jpg" data-fancybox="gallery">
+                    <a href="https://textorialpark.com/img/polaroid-3b.jpg" class="swipebox" rel="gal-1">
                         <img src="https://textorialpark.com/img/polaroid-3.png" class="polar polaroid-3" alt="Textorial Park II">
                     </a>
-                    <a href="https://textorialpark.com/img/polaroid-4b.jpg" data-fancybox="gallery">
+                    <a href="https://textorialpark.com/img/polaroid-4b.jpg" class="swipebox" rel="gal-1">
                         <img src="https://textorialpark.com/img/polaroid-4.png" class="polar polaroid-4" alt="Textorial Park II">
                     </a>
-                    <a href="https://textorialpark.com/img/polaroid-5b.jpg" data-fancybox="gallery">
+                    <a href="https://textorialpark.com/img/polaroid-5b.jpg" class="swipebox" rel="gal-1">
                         <img src="https://textorialpark.com/img/polaroid-5.png" class="polar polaroid-5" alt="Textorial Park II">
                     </a>
-                    <a href="https://textorialpark.com/img/polaroid-6b.jpg" data-fancybox="gallery">
+                    <a href="https://textorialpark.com/img/polaroid-6b.jpg" class="swipebox" rel="gal-1">
                         <img src="https://textorialpark.com/img/polaroid-6.png" class="polar polaroid-6" alt="Textorial Park II">
                     </a>
-                    <a href="https://textorialpark.com/img/polaroid-7b.jpg" data-fancybox="gallery">
+                    <a href="https://textorialpark.com/img/polaroid-7b.jpg" class="swipebox" rel="gal-1">
                         <img src="https://textorialpark.com/img/polaroid-7.png" class="polar polaroid-7" alt="Textorial Park II">
                     </a>
-                    <a href="https://textorialpark.com/img/polaroid-8b.jpg" data-fancybox="gallery">
+                    <a href="https://textorialpark.com/img/polaroid-8b.jpg" class="swipebox" rel="gal-1">
                         <img src="https://textorialpark.com/img/polaroid-8.png" class="polar polaroid-8" alt="Textorial Park II">
                     </a>
-                    <a href="https://textorialpark.com/img/polaroid-9b.jpg" data-fancybox="gallery">
+                    <a href="https://textorialpark.com/img/polaroid-9b.jpg" class="swipebox" rel="gal-1">
                         <img src="https://textorialpark.com/img/polaroid-9.png" class="polar polaroid-9" alt="Textorial Park II">
                     </a>
                 </div>
