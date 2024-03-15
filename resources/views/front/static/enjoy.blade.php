@@ -70,7 +70,7 @@
                 <div class="row mt-5 pt-5">
                     <div class="col-3"></div>
                     <div class="col-9 text-container text-justify">
-                        <p><span class="work-quote-icon me-3" style="color:#85202f"><sup>,,</sup></span>Pijąc kawę w jednej z&nbsp;nowych restauracji na Księżym Młynie, spacerując między odnowionymi czynszówkami łódzkiego osiedla, widząc młodych ludzi wokół biurowców Textorial Park trudno nie odnieść wrażenia, że&nbsp;historia odradza się w tym miejscu z&nbsp;nową energią. Zależy nam, aby była to przestrzeń, którą wybiorą najemcy i&nbsp;w&nbsp;której dobrze poczują się pracownicy ceniący komfort pracy oraz wygodę związaną z dostępnością usług. W&nbsp;swoich działaniach wdrażamy idee placemakingu, chcemy, aby to miejsce stało się wyznacznikiem stylu życia i&nbsp;pracy, a&nbsp;Łódź wzbogaciła się o&nbsp;kolejną, ciekawą przestrzeń miejską. <span class="work-quote-icon" style="color:#85202f"><sup>,,</sup></span></p>
+                        <p><span class="work-quote-icon me-3" style="color:#85202f"><sup>,,</sup></span>Pijąc kawę w jednej z&nbsp;nowych restauracji na Księżym Młynie, spacerując między odnowionymi czynszówkami łódzkiego osiedla, widząc młodych ludzi wokół biurowców Textorial Park trudno nie odnieść wrażenia, że&nbsp;historia odradza się w tym miejscu z&nbsp;nową energią. Zależy nam, aby była to przestrzeń, którą wybiorą najemcy i&nbsp;w&nbsp;której dobrze poczują się pracownicy ceniący komfort pracy oraz wygodę związaną z dostępnością usług.<span class="work-quote-icon" style="color:#85202f"><sup>,,</sup></span></p>
                         <div class="work-quote-author f400" style="color:#333333">Anna Banaś</div>
                         <div class="work-quote-function f400" style="color:#333333">prezes St. Paul's Developments Polska</div>
                     </div>
@@ -89,6 +89,45 @@
                             <span class="line-box line-box-left bg-red">popularne trasy biegowe</span><br class="moffxs">
                         </div>
 
+                    </div>
+                </div>
+
+                <div class="row mt-5 pt-5">
+                    <div class="col-12 position-relative">
+                        <div class="text-line bg-blue text-center">STREET <font class="f400">ART</font></div>
+                        <div class="row">
+                            <div class="col-md-4 text-container text-justify d-flex align-items-center">
+                                <div>
+                                    Łódź słynie z murali. A&nbsp;my kochamy murale, dlatego w&nbsp;Textorial Park&nbsp;II jedną z&nbsp;ogromnych ścian wewnątrz głównego hallu naszego biurowca ozdobimy okazałym malowidłem. Do&nbsp;współpracy przy jego realizacji zaprosiliśmy lokalnych artystów. Chcemy, aby Textorial Park&nbsp;II jeszcze mocniej wpisał się w&nbsp;artystyczne tradycje sztuki w&nbsp;przestrzeni miejskiej.
+                                </div>
+                            </div>
+                            <div class="col-md-8 work-sec-1">
+                                <img src="https://textorialpark.com/img/enjoy2.jpg" class="img-fluid" alt="Street Art">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row mt-5 pt-5">
+                    <div class="col-md-6 text-container text-justify align-items-center d-flex position-relative">
+                        <div class="text-line bg-red text-center" style="position:absolute;width:100%;margin-left:0;top:0">JEDNO MIEJSCE, <font class="f400">WIELE DRÓG</font></div>
+
+                        <div>
+                            <p>„Coraz więcej ludzi zwraca uwagę na lokalizację biura podczas decyzji wyboru pracy. Najbardziej cenione lokalizacje to centra miast z&nbsp;dużym wyborem udogodnień lokalnych, dobrym transportem publicznym i&nbsp;możliwością dotarcia do biura na rowerze”.</p>
+                            <p>&nbsp;</p>
+                            <div class="text-end">
+                                Raport z badań<br>
+                                „Zdrowe Zielone Biura”<br>
+                                PLGBC
+                            </div>
+                            <p>&nbsp;</p>
+                            <p>Mniej spalin to lepsza jakość życia. Dlatego w Textorial Park na najemców czeka prawie 200 miejsc postojowych dla rowerów.</p>
+                            <p>&nbsp;</p>
+                            <p>Każdego dnia na ulice Łodzi wyjeżdża 360 autobusów i&nbsp;240 tramwajów. Przystanki zlokalizowane wokół Textorial Park ułatwią codzienną komunikację.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 work-sec-1">
+                        <img src="https://textorialpark.com/img/enjoy3.jpg" class="img-fluid" alt="bus">
                     </div>
                 </div>
 

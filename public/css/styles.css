@@ -1076,7 +1076,7 @@ a.nav-link:hover,
 }
 .text-line-right {
   right: 0;
-  margin-right: -40px;
+  margin-right: -30px;
   margin-left: auto;
 }
 .text-box {
@@ -1093,7 +1093,7 @@ a.nav-link:hover,
 }
 .box-r-b {
   top: auto;
-  margin: auto 0 auto auto;
+  margin: auto -30px auto auto;
   right: 0;
   bottom: -70px;
 }
@@ -1101,14 +1101,14 @@ a.nav-link:hover,
   position: absolute;
   top: 80px;
   right: 0;
-  margin-right: -40px;
+  margin-right: -30px;
   width: auto;
 }
 .lines-box-left {
   position: absolute;
   top: 80px;
   left: 0;
-  margin-left: -40px;
+  margin-left: -30px;
   width: auto;
 }
 .line-box {
@@ -1164,7 +1164,7 @@ a.nav-link:hover,
 .kontakt-lines-box {
   position: absolute;
   bottom: -70px;
-  right: -40px;
+  right: -30px;
   width: 50%;
 }
 .kontakt-line {

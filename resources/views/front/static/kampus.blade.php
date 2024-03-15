@@ -37,7 +37,7 @@
                 </div>
 
                 <div class="row position-relative mt-4">
-                    <div class="text-line text-line-right bg-blue text-center najemcy-pasek metryka-pasek">METRYKA <font class="f400">TEXTORIAL PARK I</font></div>
+                    <div class="text-line text-line-right bg-blue text-center najemcy-pasek metryka-pasek">METRYKA <font class="f400">TEXTORIAL PARK</font></div>
                     <div class="col-lg-4 metryka-left">
                         <div class="o-nas-page bg-blue text-left f300 o-nas-page-metryka">
                             <b>Inwestor: </b> <br>Fabryczna 17 SPP Spółka z ograniczoną odpowiedzialnością S.K.A
