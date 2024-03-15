@@ -1,6 +1,6 @@
-<section class="container">
-    <div class="row">
-        <div class="col-12">
+<section id="video" class="container container-dashed">
+    <div class="row justify-content-center">
+        <div class="col-10">
             {!! parse_text($page->content) !!}
         </div>
     </div>
