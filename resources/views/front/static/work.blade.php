@@ -51,7 +51,7 @@
                             <span class="line-box line-box-left bg-orange">3 budynki biurowe klasy A</span><br class="moff">
                             <span class="line-box line-box-left bg-orange">161 miejsc postojowych w garażu podziemnym</span><br class="moff">
                             <span class="line-box line-box-left bg-orange">79 miejsc postojowych na terenie zewnętrznym</span><br class="moff">
-                            <span class="line-box line-box-left bg-orange">Amfiteatr i zielone patio</span><br class="moff">
+                            <span class="line-box line-box-left bg-orange">amfiteatr i zielone patio</span><br class="moff">
                             <span class="line-box line-box-left bg-orange">kantyna i restauracja w budynku A</span><br class="moff">
                             <span class="line-box line-box-left bg-orange">przystosowany dla osób niepełnosprawnych</span><br class="moff">
                             <span class="line-box line-box-left bg-orange">paczkomat, poczta w sąsiedztwie</span><br class="moff">

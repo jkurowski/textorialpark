@@ -78,7 +78,7 @@
 
                 <div class="row mt-5 pt-5">
                     <div class="col-12 position-relative">
-                        <div class="text-line text-line-right bg-red text-center">TEXTORIAL <font class="f400">PARK II</font></div>
+                        <div class="text-line text-line-right bg-red text-center">TEXTORIAL <font class="f400">PARK</font></div>
                         <img src="{{ asset('images/enjoy1xx.jpg') }}" class="img-fluid" alt="Textorial Park II">
                         <div class="lines-box text-right">
                             <ul class="mb-0 list-unstyled">
@@ -90,22 +90,6 @@
                             </ul>
                         </div>
 
-                    </div>
-                </div>
-
-                <div class="row mt-5 pt-5">
-                    <div class="col-12 position-relative">
-                        <div class="text-line bg-blue text-center">STREET <font class="f400">ART</font></div>
-                        <div class="row">
-                            <div class="col-md-4 text-container text-justify d-flex align-items-center">
-                                <div>
-                                    Łódź słynie z murali. A&nbsp;my kochamy murale, dlatego w&nbsp;Textorial Park&nbsp;II jedną z&nbsp;ogromnych ścian wewnątrz głównego hallu naszego biurowca ozdobimy okazałym malowidłem. Do&nbsp;współpracy przy jego realizacji zaprosiliśmy lokalnych artystów. Chcemy, aby Textorial Park&nbsp;II jeszcze mocniej wpisał się w&nbsp;artystyczne tradycje sztuki w&nbsp;przestrzeni miejskiej.
-                                </div>
-                            </div>
-                            <div class="col-md-8 work-sec-1">
-                                <img src="https://textorialpark.com/img/enjoy2.jpg" class="img-fluid" alt="Street Art">
-                            </div>
-                        </div>
                     </div>
                 </div>
 
@@ -146,24 +130,6 @@
                             <span class="line-box line-box-left bg-red">oraz w garażu podziemnym</span><br>
                             <span class="line-box line-box-left bg-red">stacja obsługi rowerów</span><br>
                         </div>
-                    </div>
-                </div>
-
-                <div class="row mt-5 pt-5">
-                    <div class="col-lg-6 work-sec-lead" style="color:#85202f">
-                        <div class="row">
-                            <div class="col-md-9">
-                                <p>W Textorial Park II</p>
-                                <p>planowana jest stacja</p>
-                                <p>Łódzkiego Roweru Publicznego</p>
-                            </div>
-                        </div>
-                        <br>
-                        <img src="https://textorialpark.com/img/enjoy9.png" class="img-fluid" alt="rower">
-                    </div>
-
-                    <div class="col-lg-6">
-                        <img src="https://textorialpark.com/img/enjoy8.jpg" class="img-fluid" alt="Łódzki rower publiczny">
                     </div>
                 </div>
             </div>
