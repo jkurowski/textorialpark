@@ -54,6 +54,8 @@
                             <span class="line-box line-box-left bg-orange">Amfiteatr i zielone patio</span><br class="moff">
                             <span class="line-box line-box-left bg-orange">kantyna i restauracja w budynku A</span><br class="moff">
                             <span class="line-box line-box-left bg-orange">przystosowany dla osób niepełnosprawnych</span><br class="moff">
+                            <span class="line-box line-box-left bg-orange">paczkomat, poczta w sąsiedztwie</span><br class="moff">
+                            <span class="line-box line-box-left bg-orange">przystanki komunikacji miejskiej w pobliżu</span><br class="moff">
                         </div>
                     </div>
                 </div>

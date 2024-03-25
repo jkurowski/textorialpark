@@ -14,7 +14,7 @@
             <div class="col-10">
                 <div class="row">
                     <div class="col-12 position-relative">
-                        <div class="text-line text-line-right bg-red text-center">PRZYJAZNA <font class="f400">PRZESTRZEŃ MIEJSKA</font></div>
+                        <div class="text-line text-line-left bg-red text-center">PRZYJAZNA <font class="f400">PRZESTRZEŃ MIEJSKA</font></div>
                         <img src="https://textorialpark.com/img/oferta2bg.jpg" class="img-fluid" alt="Przyjazna przestrzeń miejska">
                     </div>
                 </div>
@@ -78,15 +78,16 @@
 
                 <div class="row mt-5 pt-5">
                     <div class="col-12 position-relative">
-                        <div class="text-line bg-red text-center">TEXTORIAL <font class="f400">PARK II</font></div>
-                        <img src="https://textorialpark.com/img/enjoy1xx.jpg" class="img-fluid" alt="Textorial Park II">
-                        <div class="lines-box-left text-left">
-                            <span class="line-box line-box-left bg-red">9 tys. m<sup>2</sup> przestrzeni do odpoczynku</span><br>
-                            <span class="line-box line-box-left bg-red">fitness, SPA &amp; wellness</span><br class="moffxs">
-                            <span class="line-box line-box-left bg-red">restauracje</span><br class="moffxs">
-                            <span class="line-box line-box-left bg-red">sklepy</span><br class="moffxs">
-                            <span class="line-box line-box-left bg-red">biblioteka</span><br class="moffxs">
-                            <span class="line-box line-box-left bg-red">popularne trasy biegowe</span><br class="moffxs">
+                        <div class="text-line text-line-right bg-red text-center">TEXTORIAL <font class="f400">PARK II</font></div>
+                        <img src="{{ asset('images/enjoy1xx.jpg') }}" class="img-fluid" alt="Textorial Park II">
+                        <div class="lines-box text-right">
+                            <ul class="mb-0 list-unstyled">
+                                <li class="d-flex justify-content-end"><span class="line-box bg-red">restauracja i kantyna</span></li>
+                                <li class="d-flex justify-content-end"><span class="line-box bg-red">amfiteatr, zielone patio</span></li>
+                                <li class="d-flex justify-content-end"><span class="line-box bg-red">muzea, kawiarnie i sklepy w sąsiedztwie</span></li>
+                                <li class="d-flex justify-content-end"><span class="line-box bg-red">Park Źródliska za ogrodzeniem</span></li>
+                                <li class="d-flex justify-content-end"><span class="line-box bg-red">trasy rowerowe w okolicy</span></li>
+                            </ul>
                         </div>
 
                     </div>
@@ -141,10 +142,9 @@
                         </div>
 
                         <div class="lines-box-left enjoy-bike text-left">
-                            <span class="line-box line-box-left bg-red">prysznice dla aktywnych</span><br>
-                            <span class="line-box line-box-left bg-red">zadaszone miejsca dla rowerów<br>na terenie kompleksu</span><br>
+                            <span class="line-box line-box-left bg-red">częściowo zadaszone miejsca dla rowerów<br>na terenie kompleksu</span><br>
                             <span class="line-box line-box-left bg-red">oraz w garażu podziemnym</span><br>
-                            <span class="line-box line-box-left bg-red">mobilna stacja obsługi rowerów</span><br>
+                            <span class="line-box line-box-left bg-red">stacja obsługi rowerów</span><br>
                         </div>
                     </div>
                 </div>

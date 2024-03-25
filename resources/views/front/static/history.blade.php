@@ -44,7 +44,7 @@
                         <p>Pozostałości ceglanych murów magazynu pieczołowicie odrestaurowano, uzupełniając ubytki, symbolicznie zaznaczając także bieg bocznicy kolejowej, który do dziś pozostaje czytelny.</p>
                     </div>
                     <div class="col-4 d-flex align-items-center justify-content-end">
-                        <img src="https://textorialpark.com/img/historia-n2.jpg" class="w-100" alt="Ceglane mury">
+                        <img src="{{ asset('images/historia-n2.jpg') }}" class="w-100" alt="Ceglane mury">
                     </div>
                 </div>
 
