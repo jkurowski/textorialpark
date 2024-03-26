@@ -120,7 +120,7 @@
                     <div class="col-12 position-relative">
                         <img src="https://textorialpark.com/img/enjoy7.jpg" class="img-fluid" alt="Enjoy">
                         <div class="enjoy-bike-right">
-                            <p>Projektując Textorial Park&nbsp;II pomyśleliśmy o&nbsp;tym, co ważne dla przyszłych użytkowników.</p>
+                            <p>Projektując Textorial Park&nbsp;pomyśleliśmy o&nbsp;tym, co ważne dla przyszłych użytkowników.</p>
                             <p>Łódź posiada już ponad 150&nbsp;km ścieżek rowerowych.</p>
                             <p>Opracowaliśmy więc szereg udogodnień dla rowerzystów.</p>
                         </div>
