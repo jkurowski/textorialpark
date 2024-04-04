@@ -64,9 +64,11 @@
                         <div class="text-line text-line-right bg-green text-center">Z NATURY <font class="f400">ZIELONY</font></div>
                         <img src="https://textorialpark.com/img/live4.jpg" class="img-fluid" alt="Z natury zielony">
                         <div class="lines-box text-right">
-                            <span class="line-box bg-green">Park Źródliska – 1&nbsp;min&nbsp;spacerem</span><br>
-                            <span class="line-box bg-green">Palmiarnia Ogrodu Botanicznego – 5&nbsp;min&nbsp;spacerem</span><br>
-                            <span class="line-box bg-green">Park Nad Jasieniem – 10&nbsp;min&nbsp;spacerem</span>
+                            <ul class="mb-0 list-unstyled">
+                                <li class="d-flex justify-content-end"><span class="line-box bg-green">Park Źródliska – 1&nbsp;min&nbsp;spacerem</span></li>
+                                <li class="d-flex justify-content-end"><span class="line-box bg-green">Palmiarnia Ogrodu Botanicznego – 5&nbsp;min&nbsp;spacerem</span></li>
+                                <li class="d-flex justify-content-end"><span class="line-box bg-green">Park Nad Jasieniem – 10&nbsp;min&nbsp;spacerem</span></li>
+                            </ul>
                         </div>
                     </div>
                 </div>

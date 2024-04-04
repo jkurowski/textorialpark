@@ -1421,6 +1421,16 @@ a.nav-link:hover,
   font-weight: 300;
   line-height: 28px;
 }
+.polityka-prywatnosci p,
+.polityka-prywatnosci li {
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 32px;
+}
+.polityka-prywatnosci b,
+.polityka-prywatnosci strong {
+  font-weight: 600;
+}
 @media screen and (max-width: 1790px) {
   .footer-left-col-text {
     padding: 180px 40px 0 150px;
