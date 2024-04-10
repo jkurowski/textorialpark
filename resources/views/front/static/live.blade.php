@@ -18,7 +18,7 @@
                             <img src="https://textorialpark.com/img/live-map.jpg" alt="Live - mapa" class="">
                         </a>
                     </div>
-                    <div class="col-6 text-left d-flex align-items-center">
+                    <div class="col-6 text-left">
                         <div>
                             <div class="o-nas-page-title bg-gray text-center f300 mb-4">W ŁODZI, <font class="f400">W CENTRUM EUROPY</font></div>
                             <div class="text-container">
