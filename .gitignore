@@ -21,3 +21,4 @@ yarn-error.log
 /public/uploads/
 /.htaccess
 /resources/images/
+/old_page/
