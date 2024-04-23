@@ -2,7 +2,7 @@
     <div class="container">
         <div class="row">
             <div class="col-12">
-                @include('front.contact.form')
+                @include('front.contact.form', ['page_name' => isset($page->title) ? $page->title : 'Strona główna'])
             </div>
         </div>
     </div>

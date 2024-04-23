@@ -34,7 +34,7 @@ class ReservationSend extends Mailable
      */
     public function build()
     {
-        return $this->subject('Ośrodek Wypoczynkowy Bryza - zapytanie o dostępność')->view('front.reservation.mail-template',
+        return $this->subject('Zapytanie o dostępność')->view('front.reservation.mail-template',
             [
                 'request' => $this->request
             ]);

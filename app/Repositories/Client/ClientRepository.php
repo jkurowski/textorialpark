@@ -62,6 +62,7 @@ class ClientRepository extends BaseRepository implements ClientRepositoryInterfa
 
     public function createClient($attributes, $property = null, $status = 0)
     {
+
         if (isset($attributes['cookie']) && is_array($attributes['cookie'])) {
             $utm_array = array_filter($attributes->cookie());
             unset($utm_array['XSRF-TOKEN'], $utm_array['laravel_session']);
@@ -85,7 +86,7 @@ class ClientRepository extends BaseRepository implements ClientRepositoryInterfa
                 'client_id' => $client->id,
                 'message' => $attributes['form_message'],
                 'ip' => $attributes->ip(),
-                'source' => $attributes['page'],
+                'source' => $attributes['form_page'],
             ]);
 
             $msg->save();

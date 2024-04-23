@@ -10,7 +10,7 @@
             <table align="center" cellpadding="0" cellspacing="0" border="0" width="600" style="margin:0 auto;width:600px;padding:0;border-collapse:collapse">
                 <tr>
                     <td align="center">
-                        <img src="{{ env('APP_URL') }}/images/logo.png" alt="Ośrodek Wypoczynkowy Bryza" width="350" height="107">
+                        <img src="{{ env('APP_URL') }}/images/tplogo.png" alt="Textorial Park Logo" width="252" height="213">
                     </td>
                 </tr>
             </table>

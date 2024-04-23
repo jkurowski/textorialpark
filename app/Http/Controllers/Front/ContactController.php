@@ -37,7 +37,6 @@ class ContactController extends Controller
 
     function form(ContactFormRequest $request, Recipient $recipient)
     {
-
         $recipient->notify(new ContactNotification($request));
 
         try {
@@ -55,7 +54,7 @@ class ContactController extends Controller
                 }
             }
         } catch (\Throwable $exception) {
-            //dd($exception);
+            dd($exception);
         }
 
 

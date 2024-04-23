@@ -35,7 +35,7 @@ class ChatSend extends Mailable
      */
     public function build()
     {
-        return $this->subject('Ośrodek Wypoczynkowy Bryza - masz nową wiadomość')->view('front.contact.mail-template',
+        return $this->subject('Textorial Park - masz nową wiadomość')->view('front.contact.mail-template',
             [
                 'request' => $this->request
             ]);

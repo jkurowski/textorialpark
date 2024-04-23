@@ -12,7 +12,7 @@
                     {{ session('warning') }}
                 </div>
             @endif
-            <form method="post" id="contact-form" action="" class="validateForm">
+            <form method="post" id="contact-form" action="{{ route('contact.form') }}" class="validateForm">
                 {{ csrf_field() }}
                 <div class="row">
                     <div class="col-12 mb-4 mb-md-0 col-md-4 form-input">
