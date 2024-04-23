@@ -14,7 +14,7 @@ class IndexController extends Controller
 {
     public function index()
     {
-        $articles = Article::orderBy('date', 'desc')->paginate(10);
+        $articles = Article::orderBy('date', 'desc')->limit(4)->get();
         $slider = Slider::orderBy('sort')->get();
         $images = Image::where('gallery_id', 1)->orderBy('sort')->get();
 

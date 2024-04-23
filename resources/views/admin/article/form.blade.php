@@ -43,6 +43,13 @@
                             'file' => $entry->file,
                             'file_preview' => config('images.article.preview_file_path')
                         ])
+
+                        @include('form-elements.html-input-file', [
+                            'label' => 'Zdjęcie kwadratowe',
+                            'sublabel' => '(wymiary: 460px / 460px)',
+                            'name' => 'file_square',
+                            'file' => $entry->file_square
+                        ])
                     @endif
                     @include('form-elements.html-input-text', ['label' => 'Treść wprowadzenia', 'name' => 'content_entry', 'value' => $entry->content_entry, 'required' => 1])
                     @include('form-elements.textarea-fullwidth', ['label' => 'Treść artukułu', 'name' => 'content', 'value' => $entry->content, 'rows' => 21, 'class' => 'tinymce', 'required' => 1])

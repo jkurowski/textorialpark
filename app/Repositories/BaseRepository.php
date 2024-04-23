@@ -28,6 +28,12 @@ class BaseRepository implements EloquentRepositoryInterface
     {
         return $this->model->orderBy('sort', $order)->get();
     }
+
+    public function allSortBy($field, $order): Collection
+    {
+        return $this->model->orderBy($field, $order)->get();
+    }
+
     public function allActive(): Collection
     {
         return $this->model->whereActive(1)->get();

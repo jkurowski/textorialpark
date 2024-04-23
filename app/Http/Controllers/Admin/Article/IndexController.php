@@ -36,7 +36,7 @@ class IndexController extends Controller
 
     public function index()
     {
-        return view('admin.article.index', ['list' => $this->repository->idDesc()]);
+        return view('admin.article.index', ['list' => $this->repository->allSortBy('date', 'desc')]);
     }
 
     public function create()
@@ -58,6 +58,10 @@ class IndexController extends Controller
 
         if ($request->hasFile('file_facebook')) {
             $this->service->uploadFileFacebook($request->title, $request->file('file_facebook'), $article);
+        }
+
+        if ($request->hasFile('file_square')) {
+            $this->service->uploadFileSquare($request->title, $request->file('file_square'), $article);
         }
 
         return redirect(route('admin.article.index'))->with('success', 'Nowy artykuł dodany');
@@ -91,6 +95,10 @@ class IndexController extends Controller
 
         if ($request->hasFile('file_facebook')) {
             $this->service->uploadFileFacebook($request->title, $request->file('file_facebook'), $article, true);
+        }
+
+        if ($request->hasFile('file_square')) {
+            $this->service->uploadFileSquare($request->title, $request->file('file_square'), $article, true);
         }
 
         return redirect(route('admin.article.index'))->with('success', 'Artykuł zaktualizowany');

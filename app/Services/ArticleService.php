@@ -22,7 +22,6 @@ class ArticleService
             if (File::isFile(public_path('uploads/articles/thumbs/' . $model->file))) {
                 File::delete(public_path('uploads/articles/thumbs/' . $model->file));
             }
-
             // WebP
             if (File::isFile(public_path('uploads/articles/webp/' . $model->file_webp))) {
                 File::delete(public_path('uploads/articles/webp/' . $model->file_webp));
@@ -80,5 +79,22 @@ class ArticleService
         Image::make($filepath)->fit(600, 314)->save($filepath);
 
         $model->update(['file_facebook' => $name]);
+    }
+
+    public function uploadFileSquare(string $title, UploadedFile $file, object $model, bool $delete = false)
+    {
+
+        if ($delete) {
+            if (File::isFile(public_path('uploads/articles/square/' . $model->file_square))) {
+                File::delete(public_path('uploads/articles/square/' . $model->file_square));
+            }
+        }
+
+        $name = date('His').'_'.Str::slug($title).'.' . $file->getClientOriginalExtension();
+        $file->storeAs('articles/square', $name, 'public_uploads');
+        $filepath = public_path('uploads/articles/square/' . $name);
+        Image::make($filepath)->fit(460, 460)->save($filepath);
+
+        $model->update(['file_square' => $name]);
     }
 }

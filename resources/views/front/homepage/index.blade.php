@@ -44,35 +44,15 @@
                         </div>
 
                         <div class="row newsboard-list-row">
-                            <div class="col-md-3 text-center">
-                                <a href="textorial-park-z-nowym-najemca">
-                                    <img src="https://textorialpark.com/img/newsboard/Textorial-Park-z-nowym-najemca-square.jpg" class="img-fluid newsboardimg" alt="">
-                                </a>
-                                <img src="{{ asset('images/arrowdown.png') }}" class="hp-news-arrow mt-3 m-auto" alt="">
-                                <div class="hp-news-title"><a href="textorial-park-z-nowym-najemca">Textorial Park <b>z nowym najemcą</b></a></div>
-                            </div>
-
-                            <div class="col-md-3 text-center">
-                                <a href="jesieny-planszowkowy-mlyn">
-                                    <img src="https://textorialpark.com/img/newsboard/planszowkowy-mlyn-4-square.png" class="img-fluid newsboardimg" alt="">
-                                </a>
-                                <img src="{{ asset('images/arrowdown.png') }}" class="hp-news-arrow mt-3 m-auto" alt="">
-                                <div class="hp-news-title"><a href="jesieny-planszowkowy-mlyn"><b>Jesienny Planszówkowy Młyn 4.0</b> w Textorial Park</a></div>
-                            </div>
-
-                            <div class="col-md-3 text-center">
-                                <a href="mabion-na-nastepne-5-lat-w-textorial-park">
-                                    <img src="https://textorialpark.com/img/newsboard/mabion-na-nastepne-5-lat-square.jpg" class="img-fluid newsboardimg" alt="">
-                                </a>
-                                <img src="{{ asset('images/arrowdown.png') }}" class="hp-news-arrow mt-3 m-auto" alt="">
-                                <div class="hp-news-title"><a href="mabion-na-nastepne-5-lat-w-textorial-park"><b>Mabion S.A</b> na następne pięć lat w Textorial Park </a></div>
-                            </div>
-
-                            <div class="col-md-3 text-center">
-                                <a href="spektakl-maly-ksiaze"><img src="https://textorialpark.com/img/newsboard/textorial-park-maly-ksiaze-spektakl-square.jpg" class="img-fluid newsboardimg" alt=""></a>
-                                <img src="{{ asset('images/arrowdown.png') }}" class="hp-news-arrow mt-3 m-auto" alt="">
-                                <div class="hp-news-title"><a href="spektakl-maly-ksiaze"><b>Spektakl „Mały Książę”</b> 28 sierpnia w Textorial Park</a></div>
-                            </div>
+                            @foreach($articles as $article)
+                                <div class="col-md-3 text-center">
+                                    <a href="{{route('front.news.show', $article->slug)}}">
+                                        <img src="{{asset('/uploads/articles/square/'.$article->file_square) }}" alt="{{ $article->file_alt }}" width="700" height="394" class="golden-border w-100">
+                                    </a>
+                                    <img src="{{ asset('images/arrowdown.png') }}" class="hp-news-arrow mt-3 m-auto" alt="">
+                                    <div class="hp-news-title"><a href="{{route('front.news.show', $article->slug)}}">{{ $article->title }}</a></div>
+                                </div>
+                            @endforeach
                         </div>
                     </div>
                 </div>
