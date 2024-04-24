@@ -5,7 +5,7 @@
                 <img src="{{ asset('images/logo.png') }}" class="logo" alt="Logo">
             </a>
 
-            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
 
@@ -39,10 +39,10 @@
                         <a class="nav-link js-scroll-trigger" href="{{ route('contact') }}">KONTAKT</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link js-scroll-trigger lang-pl" href="#"><b>PL</b></a>
+                        <a class="nav-link js-scroll-trigger lang-pl d-none" href="#"><b>PL</b></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link js-scroll-trigger lang-en" href="#">EN</a>
+                        <a class="nav-link js-scroll-trigger lang-en d-none" href="#">EN</a>
                     </li>
                 </ul>
             </div>

@@ -746,6 +746,7 @@ a.nav-link:hover,
   background-size: cover !important;
   background-repeat: no-repeat;
   background-position: center center !important;
+  position: relative;
 }
 .ptb-0 {
   padding-top: 0 !important;
@@ -1457,7 +1458,7 @@ a.nav-link:hover,
     text-align: left;
   }
   .footer-space {
-    width: 38%;
+    width: 34%;
   }
   .footer-col-1 {
     width: 13%;
@@ -1568,7 +1569,7 @@ a.nav-link:hover,
   .footer-in {
     padding-left: 120px;
     padding-right: 120px;
-    margin-top: 60px;
+    margin-top: 30px;
   }
   .footer-space {
     width: 40%;
@@ -1723,10 +1724,10 @@ a.nav-link:hover,
   .footer-in {
     padding-left: 100px;
     padding-right: 100px;
-    margin-top: 70px;
+    margin-top: 45px;
   }
   .footer-space {
-    width: 44%;
+    width: 36%;
   }
   .footer-col-1 {
     width: 16%;
@@ -1925,7 +1926,7 @@ a.nav-link:hover,
   .footer-in {
     padding-left: 60px;
     padding-right: 60px;
-    margin-top: 90px;
+    margin-top: 60px;
   }
   .footer-space {
     width: 47%;
@@ -2018,7 +2019,7 @@ a.nav-link:hover,
   .footer-in {
     padding-left: 60px;
     padding-right: 60px;
-    margin-top: 100px;
+    margin-top: 50px;
   }
   .footer-space {
     width: 49%;
@@ -2147,7 +2148,7 @@ a.nav-link:hover,
   .footer-in {
     padding-left: 40px;
     padding-right: 40px;
-    margin-top: 80px;
+    margin-top: 50px;
   }
   .footer-space {
     width: 39%;
@@ -2524,6 +2525,17 @@ a.nav-link:hover,
   #mainNav {
     border-bottom: 0 !important;
   }
+  #mainNav.fixed {
+    background-color: #73859c !important;
+    z-index: 9999 !important;
+  }
+  #mainNav.fixed.navbar,
+  .navbar {
+    padding: 10px 0 !important;
+  }
+  #mainNav.fixed .navbar-brand {
+    width: 110px;
+  }
   .navbar-light .navbar-toggler {
     border-color: #ffffff;
     border: 0 !important;
@@ -2620,11 +2632,11 @@ a.nav-link:hover,
   }
   .footer-in {
     padding-left: 40px;
-    padding-right: 40px;
-    margin-top: 90px;
+    padding-right: 0;
+    margin-top: 18px;
   }
   .footer-space {
-    width: 40%;
+    width: 50%;
   }
   .footer-col-1 {
     width: 24%;
@@ -2705,15 +2717,23 @@ a.nav-link:hover,
   .ntop {
     padding: 27px !important;
   }
+  .masthead .header-circle {
+    width: 130px;
+    height: 130px;
+    bottom: 10px;
+  }
+  .masthead .header-circle h1 {
+    font-size: 29px;
+  }
 }
 @media screen and (max-width: 850px) {
   .footer-in {
     padding-left: 40px;
     padding-right: 40px;
-    margin-top: 60px;
+    margin-top: 26px;
   }
   .footer-space {
-    width: 45%;
+    width: 52%;
   }
   .footer-col-1 {
     width: 20%;
