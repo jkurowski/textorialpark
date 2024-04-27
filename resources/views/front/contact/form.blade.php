@@ -102,7 +102,7 @@
                         <div class="form-submit w-100">
                             <input name="form_page" type="hidden" value="@isset($page_name) {{ $page_name }} @endif">
                             <script type="text/javascript">
-                                document.write("<button class=\"bttn w-100\" type=\"submit\">WYŚLIJ WIADOMOŚĆ</button>");
+                                document.write("<button type=\"submit\" class=\"g-recaptcha bttn w-100\" data-sitekey=\"{{ config('services.recaptcha_v3.siteKey') }}\" data-callback=\"onRecaptchaSuccess\" data-action=\"submitContact\">WYŚLIJ WIADOMOŚĆ</button>");
                             </script>
                             <noscript>Do poprawnego działania, Java musi być włączona.</noscript>
                         </div>
@@ -115,17 +115,31 @@
 @push('scripts')
     <script src="{{ asset('js/validation.js') }}" charset="utf-8"></script>
     <script src="{{ asset('js/pl.js') }}" charset="utf-8"></script>
+    <script src="https://www.google.com/recaptcha/api.js"></script>
+
     <script type="text/javascript">
         $(document).ready(function(){
             $(".validateForm").validationEngine({
                 validateNonVisibleFields: true,
                 updatePromptsPosition:true,
-                promptPosition : "topRight:-137px"
+                promptPosition : "topRight:-137px",
+                autoPositionUpdate: false
             });
         });
+
+        function onRecaptchaSuccess(token) {
+            $(".validateForm").validationEngine('updatePromptsPosition');
+            const isValid = $(".validateForm").validationEngine('validate');
+            if (isValid) {
+                $("#contact-form").submit();
+            } else {
+                grecaptcha.reset();
+            }
+        }
+
         @if (session('success') || session('warning') || $errors->any())
         $(window).load(function() {
-            const aboveHeight = $('header').outerHeight();
+            const aboveHeight = $('#mainNav').outerHeight();
             $('html, body').stop().animate({
                 scrollTop: $('.validateForm').offset().top-aboveHeight
             }, 1500, 'easeInOutExpo');
