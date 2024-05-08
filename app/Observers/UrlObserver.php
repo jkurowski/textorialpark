@@ -18,15 +18,17 @@ class UrlObserver
      */
     public function saving(Url $url)
     {
-        $url->slug = Str::slug($url->title);
-        $url->type = 2;
+        if(app()->getLocale() == 'pl') {
+            $url->slug = Str::slug($url->title);
+            $url->type = 2;
 
-        if ($url->parent_id) {
-            $array = Url::ancestorsOf($url->id)->pluck('slug')->toArray();
-            array_push($array, $url->slug);
-            $url->uri = implode('/', $array);
-        } else {
-            $url->uri = $url->slug;
+            if ($url->parent_id) {
+                $array = Url::ancestorsOf($url->id)->pluck('slug')->toArray();
+                array_push($array, $url->slug);
+                $url->uri = implode('/', $array);
+            } else {
+                $url->uri = $url->slug;
+            }
         }
     }
 }

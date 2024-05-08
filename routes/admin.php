@@ -21,7 +21,11 @@ Route::group([
     Route::post('renters/set', 'Renters\IndexController@sort')->name('renters.sort');
     Route::get('ajaxGetGalleries', 'Gallery\IndexController@ajaxGetGalleries')->name('ajaxGetGalleries');
 
+
+    Route::get('page/translate', 'Page\IndexController@translate')->name('translate');
+
     Route::resources([
+        'dictionary' => 'Dictionary\IndexController',
         'user' => 'User\IndexController',
         'role' => 'Role\IndexController',
         'greylist' => 'Greylist\IndexController',

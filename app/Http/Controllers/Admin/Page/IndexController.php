@@ -8,6 +8,7 @@ use App\Http\Controllers\Controller;
 use App\Http\Requests\PageFormRequest;
 use App\Models\Page;
 use App\Repositories\PageRepository;
+use Illuminate\Support\Facades\DB;
 
 class IndexController extends Controller
 {
@@ -47,6 +48,10 @@ class IndexController extends Controller
 
     public function edit(Page $page)
     {
+        if(request()->get('lang')) {
+            app()->setLocale(request()->get('lang'));
+        }
+
         return view('admin.page.form', [
             'entry' => $page,
             'selectMenu' => Page::where('id', '!=', $page->id)->pluck('title', 'id')->prepend('Brak podstrony', 0),
@@ -57,6 +62,10 @@ class IndexController extends Controller
 
     public function update(PageFormRequest $request, int $id)
     {
+        if(request()->get('lang')) {
+            app()->setLocale(request()->get('lang'));
+        }
+
         $page = $this->repository->find($id);
         $this->repository->update($request->validated(), $page);
 
@@ -87,4 +96,50 @@ class IndexController extends Controller
     {
         //
     }
+
+//    public function translate(){
+//        $defaultLocale = 'pl';
+//
+//        $entries = DB::table('pages')->get();
+//
+//        foreach ($entries as $n) {
+//            $existingModel = Page::find($n->id);
+//
+//            //'title', 'content', 'meta_title', 'meta_description'
+//
+//            // If the entry exists, update its attributes
+//            if ($existingModel) {
+//
+//                // Existing data
+//                $existingModel->fill([
+//                    'parent_id' => $n->parent_id,
+//                    'slug' => $n->slug,
+//                    '_lft' => $n->_lft,
+//                    '_rgt' => $n->_rgt,
+//                    'uri' => $n->uri,
+//                    'url' => $n->url,
+//                    'url_target' => $n->url_target,
+//                    'content_header' => $n->content_header,
+//                    'header' => $n->header,
+//                    'active' => $n->active,
+//                    'type' => $n->type,
+//                    'sort' => $n->sort,
+//                    'created_at' => $n->created_at,
+//                    'updated_at' => $n->updated_at,
+//                    'meta_robots' => $n->meta_robots,
+//                ]);
+//
+//                // Update translations for translatable attributes
+//                $existingModel->setTranslation('title', $defaultLocale, $n->title);
+//                $existingModel->setTranslation('content', $defaultLocale, $n->content);
+//                $existingModel->setTranslation('meta_title', $defaultLocale, $n->meta_title);
+//                $existingModel->setTranslation('meta_description', $defaultLocale, $n->meta_description);
+//
+//                // Save
+//                $existingModel->save();
+//            }
+//        }
+//
+//        return redirect(route('admin.page.index'))->with('success', 'Wpisy przetłumaczone');
+//    }
 }

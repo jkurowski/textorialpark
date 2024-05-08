@@ -21,24 +21,26 @@
                 <div class="card mt-3">
                     @include('form-elements.back-route-button')
                     <div class="card-body control-col12">
-                        <div class="row w-100 form-group">
-                            @include('form-elements.html-select', ['label' => 'Status', 'name' => 'active', 'selected' => $entry->active, 'select' => ['1' => 'Pokaż na liście', '0' => 'Ukryj na liście']])
-                        </div>
-                        <div class="row w-100 form-group">
-                            @include('form-elements.html-select', ['label' => 'Okno docelowe', 'name' => 'url_target', 'selected' => $entry->url_target, 'select' => ['_self' => 'Ta samo okno', '_blank' => 'Nowe okno', '_domain' => 'Link w domenie']])
-                        </div>
-                        <div class="row w-100 form-group">
-                            @include('form-elements.html-input-text', ['label' => 'Adres url', 'sublabel'=> 'Zew. linki, moduł strony', 'name' => 'url', 'value' => $entry->url])
-                        </div>
-                        @if($selectMenu->count() > 0)
-                        <div class="row w-100 form-group">
-                            @include('form-elements.html-select', [
-                                        'label' => 'Podstrona',
-                                        'name' => 'parent_id',
-                                        'selected' => $entry->parent_id,
-                                        'select' => $selectMenu
-                                    ])
-                        </div>
+                        @if(!Request::get('lang'))
+                            <div class="row w-100 form-group">
+                                @include('form-elements.html-select', ['label' => 'Status', 'name' => 'active', 'selected' => $entry->active, 'select' => ['1' => 'Pokaż na liście', '0' => 'Ukryj na liście']])
+                            </div>
+                            <div class="row w-100 form-group">
+                                @include('form-elements.html-select', ['label' => 'Okno docelowe', 'name' => 'url_target', 'selected' => $entry->url_target, 'select' => ['_self' => 'Ta samo okno', '_blank' => 'Nowe okno', '_domain' => 'Link w domenie']])
+                            </div>
+                            <div class="row w-100 form-group">
+                                @include('form-elements.html-input-text', ['label' => 'Adres url', 'sublabel'=> 'Zew. linki, moduł strony', 'name' => 'url', 'value' => $entry->url])
+                            </div>
+                            @if($selectMenu->count() > 0)
+                            <div class="row w-100 form-group">
+                                @include('form-elements.html-select', [
+                                            'label' => 'Podstrona',
+                                            'name' => 'parent_id',
+                                            'selected' => $entry->parent_id,
+                                            'select' => $selectMenu
+                                        ])
+                            </div>
+                            @endif
                         @endif
 
                         <div class="row w-100 form-group">
@@ -52,13 +54,17 @@
                         </div>
                         <div class="row w-100 form-group">
                             @include('form-elements.html-input-text', ['label' => 'Opis strony', 'sublabel'=> 'Meta tag - description', 'name' => 'meta_description', 'value' => $entry->meta_description])
-                        </div>
+                        </div>]
+
+                        @if(!Request::get('lang'))
                         <div class="row w-100 form-group">
                             @include('form-elements.html-input-text', ['label' => 'Indeksowanie', 'sublabel'=> 'Meta tag - robots', 'name' => 'meta_robots', 'value' => $entry->meta_robots])
                         </div>
+                        @endif
                     </div>
                 </div>
             </div>
+            <input type="hidden" name="lang" value="{{$current_locale}}">
             @include('form-elements.submit', ['name' => 'submit', 'value' => 'Zapisz'])
         </form>
 @endsection

@@ -1,7 +1,7 @@
 <div class="container">
     <div class="row d-flex justify-content-center">
         <div class="col-12 position-relative">
-            <h2 class="text-center mb-5" style="width:100% !important;font-weight:300;color:#ffffff">NAPISZ DO NAS</h2>
+            <h2 class="text-center mb-5" style="width:100% !important;font-weight:300;color:#ffffff">@lang('website.contactform-cta')</h2>
             @if (session('success'))
                 <div class="alert alert-success border-0">
                     {{ session('success') }}
@@ -16,7 +16,7 @@
                 {{ csrf_field() }}
                 <div class="row">
                     <div class="col-12 mb-4 mb-md-0 col-md-4 form-input">
-                        <label for="form_name">Imię <span class="text-danger">*</span></label>
+                        <label for="form_name">@lang('website.contactform-name') <span class="text-danger">*</span></label>
                         <input name="form_name" id="form_name" class="validate[required] form-control @error('form_name') is-invalid @enderror" type="text" value="{{ old('form_name') }}">
 
                         @error('form_name')
@@ -24,11 +24,11 @@
                         @enderror
                     </div>
                     <div class="col-12 mb-4 mb-md-0 col-md-4 form-input col-input-important">
-                        <label for="form_surnames">Nazwisko <span class="text-danger">*</span></label>
+                        <label for="form_surnames">@lang('website.contactform-surname') <span class="text-danger">*</span></label>
                         <input name="form_surnames" id="form_surnames" class="form-control" type="text" value="{{ old('form_surname') }}">
                     </div>
                     <div class="col-12 mb-4 mb-md-0 col-md-4 form-input">
-                        <label for="form_email">E-mail <span class="text-danger">*</span></label>
+                        <label for="form_email">@lang('website.contactform-email') <span class="text-danger">*</span></label>
                         <input name="form_email" id="form_email" class="validate[required] form-control @error('form_email') is-invalid @enderror" type="text" value="{{ old('form_email') }}">
 
                         @error('form_email')
@@ -36,7 +36,7 @@
                         @enderror
                     </div>
                     <div class="col-12 col-md-4 form-input">
-                        <label for="form_phone">Telefon <span class="text-danger">*</span></label>
+                        <label for="form_phone">@lang('website.contactform-phone') <span class="text-danger">*</span></label>
                         <input name="form_phone" id="form_phone" class="validate[required] form-control @error('form_phone') is-invalid @enderror" type="text" value="{{ old('form_phone') }}">
 
                         @error('form_phone')
@@ -44,7 +44,7 @@
                         @enderror
                     </div>
                     <div class="col-12 mt-4 form-input">
-                        <label for="form_message">Treść wiadomości <span class="text-danger">*</span></label>
+                        <label for="form_message">@lang('website.contactform-message') <span class="text-danger">*</span></label>
                         <textarea rows="5" cols="1" name="form_message" id="form_message" class="validate[required] form-control @error('form_message') is-invalid @enderror">{{ old('form_message') }}</textarea>
 
                         @error('form_message')
@@ -80,20 +80,7 @@
                             <div class="col-12">
                                 <div class="rodo-rule clearfix">
                                     <input name="rule_1" id="rule_1" value="1" type="checkbox" data-prompt-position="topLeft:0">
-                                    <label for="rule_1" class="rules-text">
-                                        Wyrażam zgodę na przetwarzanie przez St. Paul’s Developments Polska - SPP Spółka z ograniczoną
-                                        odpowiedzialnością S.K.A. z siedzibą w Łodzi moich danych osobowych w postaci imienia, nazwiska,
-                                        adresu do korespondencji elektronicznej oraz numeru telefonu w celu realizacji zapytania z
-                                        formularza kontaktowego i dostarczania mi informacji handlowych i marketingowych dotyczących
-                                        produktów i usług oferowanych przez St. Paul’s Developments Polska - SPP Spółka z ograniczoną
-                                        odpowiedzialnością S.K.A. z siedzibą w Łodzi przy ul. Fabrycznej 17.
-                                        <br><br>
-                                        Jednocześnie potwierdzam, że <a href="/pl/polityka-prywatnosci/" target="_blank"> zostałem/-łam poinformowany/-na o przysługujących mi prawach</a>, w
-                                        tym prawie dostępu do swoich danych osobowych, ich poprawiania oraz dobrowolności udzielenia
-                                        powyższych zgód, jak również o możliwości ich odwołania w każdym czasie. Przyjmuję do
-                                        wiadomości, iż odwołanie zgody nie wpływa na zgodność z prawem przetwarzania danych przed jej
-                                        odwołaniem.
-                                    </label>
+                                    <label for="rule_1" class="rules-text">@lang('website.contactform-rule')</label>
                                 </div>
                             </div>
                         </div>
@@ -102,7 +89,7 @@
                         <div class="form-submit w-100">
                             <input name="form_page" type="hidden" value="@isset($page_name) {{ $page_name }} @endif">
                             <script type="text/javascript">
-                                document.write("<button type=\"submit\" class=\"g-recaptcha bttn w-100\" data-sitekey=\"{{ config('services.recaptcha_v3.siteKey') }}\" data-callback=\"onRecaptchaSuccess\" data-action=\"submitContact\">WYŚLIJ WIADOMOŚĆ</button>");
+                                document.write("<button type=\"submit\" class=\"g-recaptcha bttn w-100\" data-sitekey=\"{{ config('services.recaptcha_v3.siteKey') }}\" data-callback=\"onRecaptchaSuccess\" data-action=\"submitContact\">@lang('website.contactform-sendbutton')</button>");
                             </script>
                             <noscript>Do poprawnego działania, Java musi być włączona.</noscript>
                         </div>

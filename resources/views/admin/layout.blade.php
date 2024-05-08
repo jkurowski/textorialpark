@@ -52,7 +52,12 @@
                                     <span class="bullet bullet-dot"></span>
                                 </span> Blokada dostępu</a>
                         </li>
-
+                        <li {{ Request::routeIs('admin.dictionary.*') ? 'class=active' : '' }}>
+                            <a href="{{ route('admin.dictionary.index') }}">
+                                <span class="menu-bullet">
+                                    <span class="bullet bullet-dot"></span>
+                                </span> Tłumaczenia</a>
+                        </li>
                         <li {{ Request::routeIs('admin.slider.*') ? 'class=active' : '' }}>
                             <a href="{{ route('admin.slider.index') }}">
                                 <span class="menu-bullet">

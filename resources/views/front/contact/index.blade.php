@@ -23,7 +23,7 @@
 
                         <div class="kontakt-lines-box">
                             <div class="text-line bg-red text-center kontakt-line">
-                                <strong class="me-1">BĄDŹMY</strong>W KONTAKCIE
+                                @lang('website.contact-social-media')
                                 <a href="https://www.facebook.com/textorialpark/" target="_blank" class="ms-4">
                                     <img src="{{ asset('images/fb-ico.png') }}" alt="Facebook Logo" class="kontakt-social">
                                 </a>
@@ -39,12 +39,12 @@
                             </div>
                             <div class="text-line bg-red text-center kontakt-line">
                                 <a href="https://www.youtube.com/watch?v=ufgrXoJvZ-E" class="swipebox" style="color:#ffffff">
-                                    <strong class="me-1">FILM VIDEO </strong>KSIĘŻY MŁYN
+                                    @lang('website.contact-movie')
                                 </a>
                             </div>
                             <div class="text-line bg-red text-center kontakt-line">
                                 <a href="{{ asset('/uploads/files/broszura.pdf') }}" style="color:#ffffff">
-                                    <strong class="me-1">BROSZURA </strong>DO POBRANIA
+                                    @lang('website.contact-brochure')
                                 </a>
                             </div>
                         </div>
