@@ -36,8 +36,8 @@ return [
     */
 
     'floor_plan' => [
-        'width' => 1024,
-        'height' => 803
+        'width' => 1440,
+        'height' => 1440
     ],
 
     /*

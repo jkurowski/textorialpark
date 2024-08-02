@@ -20,14 +20,14 @@
                     <a href="{{ route('front.work') }}" class="footer-link d-inline">work</a>
                     <font style="color:#73859c">/</font>
                     <a href="{{ route('front.enjoy') }}" class="footer-link d-inline">enjoy</a>
-                    <a href="{{ route('front.kampus') }}" class="footer-link b-block">KAMPUS</a>
-                    <a href="{{ route('front.plan') }}" class="footer-link d-block">DO WYNAJĘCIA</a>
-                    <a href="{{ route('static', ['uri' => 'spacer-wirtualny']) }}" class="footer-link d-block">SPACER WIRTUALNY</a>
+                    <a href="{{ route('front.kampus') }}" class="footer-link b-block">@lang('website.menu-campus')</a>
+                    <a href="{{ route('front.plan') }}" class="footer-link d-block">@lang('website.menu-for-rent')</a>
+                    <a href="{{ route('static', ['uri' => 'spacer-wirtualny']) }}" class="footer-link d-block">@lang('website.menu-virtual-walk')</a>
                     <a href="{{ route('front.news.index') }}" class="footer-link d-block">NEWSBOARD</a>
-                    <a href="{{ route('front.history') }}" class="footer-link d-block">HISTORIA</a>
-                    <a href="{{ route('renters') }}" class="footer-link d-block">NAJEMCY</a>
-                    <a href="{{ route('static', ['uri' => 'o-nas']) }}" class="footer-link d-block">INWESTOR</a>
-                    <a href="{{ route('contact') }}" class="footer-link d-block">KONTAKT</a>
+                    <a href="{{ route('front.history') }}" class="footer-link d-block">@lang('website.menu-history')</a>
+                    <a href="{{ route('renters') }}" class="footer-link d-block">@lang('website.menu-renters')</a>
+                    <a href="{{ route('static', ['uri' => 'o-nas']) }}" class="footer-link d-block">@lang('website.menu-investor')</a>
+                    <a href="{{ route('contact') }}" class="footer-link d-block">@lang('website.menu-contact')</a>
                 </div>
 
                 <div class="footer-col-2">

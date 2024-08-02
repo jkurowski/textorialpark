@@ -15,28 +15,28 @@
                         <a class="nav-link" href="/">HOME</a>
                     </li>
                     <li class="nav-item {{ Request::routeIs('front.kampus') ? 'active' : '' }}">
-                        <a class="nav-link js-scroll-trigger" href="{{ route('front.kampus') }}">KAMPUS</a>
+                        <a class="nav-link js-scroll-trigger" href="{{ route('front.kampus') }}">@lang('website.menu-campus')</a>
                     </li>
                     <li class="nav-item {{ Request::routeIs('front.plan') ? 'active' : '' }}">
-                        <a class="nav-link js-scroll-trigger" href="{{ route('front.plan') }}">DO WYNAJĘCIA</a>
+                        <a class="nav-link js-scroll-trigger" href="{{ route('front.plan') }}">@lang('website.menu-for-rent')</a>
                     </li>
                     <li class="nav-item @isset($page) @if($page->slug == 'spacer-wirtualny') active @endif @endisset">
-                        <a class="nav-link js-scroll-trigger" href="{{ route('static', ['uri' => 'spacer-wirtualny']) }}">SPACER WIRTUALNY</a>
+                        <a class="nav-link js-scroll-trigger" href="{{ route('static', ['uri' => 'spacer-wirtualny']) }}">@lang('website.menu-virtual-walk')</a>
                     </li>
                     <li class="nav-item @isset($page) @if($page->slug == 'newsboard') active @endif @endisset">
                         <a class="nav-link js-scroll-trigger" href="{{ route('front.news.index') }}">NEWSBOARD</a>
                     </li>
                     <li class="nav-item {{ Request::routeIs('front.history') ? 'active' : '' }}">
-                        <a class="nav-link js-scroll-trigger" href="{{ route('front.history') }}">HISTORIA</a>
+                        <a class="nav-link js-scroll-trigger" href="{{ route('front.history') }}">@lang('website.menu-history')</a>
                     </li>
                     <li class="nav-item {{ Request::routeIs('renters') ? 'active' : '' }}"
-                    ><a class="nav-link js-scroll-trigger" href="{{ route('renters') }}">NAJEMCY</a>
+                    ><a class="nav-link js-scroll-trigger" href="{{ route('renters') }}">@lang('website.menu-renters')</a>
                     </li>
                     <li class="nav-item @isset($page) @if($page->slug == 'o-nas') active @endif @endisset">
-                        <a class="nav-link js-scroll-trigger" href="{{ route('static', ['uri' => 'o-nas']) }}">INWESTOR</a>
+                        <a class="nav-link js-scroll-trigger" href="{{ route('static', ['uri' => 'o-nas']) }}">@lang('website.menu-investor')</a>
                     </li>
                     <li class="nav-item {{ Request::routeIs('contact') ? 'active' : '' }}">
-                        <a class="nav-link js-scroll-trigger" href="{{ route('contact') }}">KONTAKT</a>
+                        <a class="nav-link js-scroll-trigger" href="{{ route('contact') }}">@lang('website.menu-contact')</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link js-scroll-trigger lang-pl d-none" href="#"><b>PL</b></a>

@@ -1,6 +1,6 @@
 @extends('layouts.page')
 
-@section('meta_title', 'Kontakt')
+@section('meta_title', $page->title)
 @section('seo_title', '')
 @section('seo_description', '')
 

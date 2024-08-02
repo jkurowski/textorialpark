@@ -26,7 +26,7 @@ class RentersFormRequest extends FormRequest
         return [
             'name' => 'required|string|min:5|max:100',
             'text' => 'required|string|min:5',
-            'bgcolor' => 'required',
+            'bgcolor' => '',
             'sort' => ''
         ];
     }

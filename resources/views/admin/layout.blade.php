@@ -102,6 +102,21 @@
 
                     </ul>
                 </li>
+                <li class="active">
+                    <a href="#">
+                        <i class="fe-home"></i>
+                        <span> DeveloCMS </span>
+                    </a>
+                    <ul class="sub-menu">
+                        <li class="{{ Request::routeIs('admin.developro.*') ? 'active' : '' }}">
+                            <a href="{{route('admin.developro.investment.index')}}">
+                                <span class="menu-bullet">
+                                    <span class="bullet bullet-dot"></span>
+                                </span> Inwestycje
+                            </a>
+                        </li>
+                    </ul>
+                </li>
             </ul>
         </div>
         <div class="clearfix"></div>

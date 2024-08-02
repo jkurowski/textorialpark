@@ -24,6 +24,11 @@ Route::group(['namespace' => 'Front', 'prefix' => '{locale?}', 'where' => ['loca
     Route::get('/kampus/', 'Static\IndexController@kampus')->name('front.kampus');
     Route::get('/do-wynajecia/', 'Static\IndexController@plan')->name('front.plan');
 
+
+    Route::get('/plan/', 'Developro\Investment\IndexController@index')->name('investment');
+    Route::get('/plan/budynek-{building}', 'Developro\Investment\IndexController@show')->name('investment.building');
+    Route::get('/plan/budynek-{building}/pietro-{floor}', 'Developro\Investment\IndexController@floor')->name('investment.building.floor');
+
     // Articles
     Route::group(['prefix' => 'newsboard', 'as' => 'front.news.'], function() {
         Route::get('/',         'ArticleController@index')->name('index');

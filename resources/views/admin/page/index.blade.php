@@ -44,11 +44,19 @@
                                 @endif
                                 <td class="text-center">{{$page->created_at->format('Y-m-d H:i')}}</td>
                                 <td class="option-120">
+                                    @if($page->type == 1)
                                     <div class="btn-group">
                                         <a href="{{route('admin.page.edit', ['page' => $page->id, 'lang' => 'en'])}}" class="btn action-button lang-button me-1" data-toggle="tooltip" data-placement="top" title="Edytuj"><img src="{{ asset('/cms/flags/en.png') }}" alt="Tłumaczenie: en"></a>
 
                                         <a href="{{route('admin.page.edit', $page->id)}}" class="btn action-button me-1" data-toggle="tooltip" data-placement="top" title="Edytuj"><i class="fe-edit"></i></a>
                                     </div>
+                                    @else
+                                        <div class="btn-group">
+                                            <a href="{{route('admin.url.edit', ['url' => $page->id, 'lang' => 'en'])}}" class="btn action-button lang-button me-1" data-toggle="tooltip" data-placement="top" title="Edytuj"><img src="{{ asset('/cms/flags/en.png') }}" alt="Tłumaczenie: en"></a>
+
+                                            <a href="{{route('admin.url.edit', $page->id)}}" class="btn action-button me-1" data-toggle="tooltip" data-placement="top" title="Edytuj"><i class="fe-edit"></i></a>
+                                        </div>
+                                    @endif
                                 </td>
                             </tr>
                             @if($page->children->count() > 0)

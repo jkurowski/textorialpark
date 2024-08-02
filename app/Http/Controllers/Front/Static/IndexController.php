@@ -10,13 +10,13 @@ class IndexController extends Controller
 {
     public function live()
     {
-        $page = Page::find(9);
+        $page = Page::find(17);
         return view('front.static.live', compact('page'));
     }
 
     public function work()
     {
-        $page = Page::find(9);
+        $page = Page::find(18);
         return view('front.static.work', compact('page'));
     }
 
@@ -34,7 +34,7 @@ class IndexController extends Controller
 
     public function kampus()
     {
-        $page = Page::find(14);
+        $page = Page::find(16);
         return view('front.static.kampus', compact('page'));
     }
 
