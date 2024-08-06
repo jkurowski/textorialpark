@@ -26,7 +26,11 @@
                     <div class="col-12">
                         @if($building->file)
                             <div id="plan">
-                                <div id="plan-holder"><img src="{{ asset('/investment/building/'.$building->file) }}" alt="{{$building->name}}" id="invesmentplan" usemap="#invesmentplan"></div>
+                                <div id="plan-holder">
+                                    <img src="{{ asset('/investment/building/'.$building->file) }}" alt="{{$building->name}}"
+                                            id="invesmentplan"
+                                            usemap="#invesmentplan">
+                                </div>
                                 <map name="invesmentplan">
                                     <map name="invesmentplan">
                                         @foreach($building->floorsOptionsWithCount(0) as $floor)

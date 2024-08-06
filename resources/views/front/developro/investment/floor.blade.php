@@ -30,9 +30,9 @@
                         @foreach($floorVariants as $floor)
                             <div class="tab-pane fade {{ $loop->first ? 'show active' : '' }}" id="floor{{$floor->id}}" role="tabpanel" aria-labelledby="floor-{{$floor->id}}">
                                 @if($floor->file)
-                                    <div id="plan-holder">
-                                        <img src="{{ asset('/investment/floor/webp/'.$floor->file_webp) }}" alt="{{$floor->name}}" id="invesmentplan" usemap="#invesmentplan">
-                                        <map name="invesmentplan">
+                                    <div class="floor-plan-holder">
+                                        <img src="{{ asset('/investment/floor/webp/'.$floor->file_webp) }}" alt="{{$floor->name}}" id="invesmentplan-{{$floor->id}}" usemap="#invesmentplan-{{$floor->id}}" class="floorplan">
+                                        <map name="invesmentplan-{{$floor->id}}">
                                             @if($floor->properties->count() > 0)
                                                 @foreach($floor->properties as $r)
                                                     @if($r->html)

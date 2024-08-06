@@ -43,7 +43,15 @@ $(document).ready(function() {
     const hoverOpacity = 0.8;
     const normalState = 0.5;
 
-    $("#invesmentplan").mapster({
+    const tabEl = document.querySelectorAll('button[data-bs-toggle="tab"]');
+    tabEl.forEach(function(el){
+        el.addEventListener('shown.bs.tab', function (event) {
+            const e = $('.floor-plan-holder').width();
+            $(".floorplan").mapster("resize",e);
+        })
+    })
+
+    $(".floorplan").mapster({
         onClick: function() {
             const a = $(this).attr("data-roomstatus");
             // if (a !== "2") {
