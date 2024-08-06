@@ -18,7 +18,7 @@
                             <li>
                                 <a href="{{ route('investment')}}">WRÓĆ DO PLANU</a>
                             </li>
-                            @foreach($investment->buildingFloors as $floor)
+                            @foreach($building->floorsOptionsWithCount(0) as $floor)
                                 <li><a href="{{ route('investment.building.floor', [Str::lower($building->number), $floor->number]) }}" data-building="{{$floor->id}}">{{$floor->name}}</a></li>
                             @endforeach
                         </ul>
@@ -29,7 +29,7 @@
                                 <div id="plan-holder"><img src="{{ asset('/investment/building/'.$building->file) }}" alt="{{$building->name}}" id="invesmentplan" usemap="#invesmentplan"></div>
                                 <map name="invesmentplan">
                                     <map name="invesmentplan">
-                                        @foreach($investment->buildingFloors as $floor)
+                                        @foreach($building->floorsOptionsWithCount(0) as $floor)
                                             @if($floor->html)
                                                 <area shape="poly" href="{{ route('investment.building.floor', [Str::lower($building->number), $floor->number]) }}" data-item="{{$floor->id}}" title="{{$floor->name}}" alt="building-{{$floor->id}}" data-floornumber="{{$floor->id}}" data-floortype="{{$floor->type}}" coords="{{cords($floor->html)}}">
                                             @endif
