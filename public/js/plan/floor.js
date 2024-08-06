@@ -36,10 +36,10 @@ $(document).ready(function() {
     });
 
 
-    const sold = 'ec2327'; // mieszkanie sprzedane
-    const reservation = '1788c9'; // mieszkanie zarezerwowane
+    const sold = '0063a9'; // mieszkanie sprzedane
+    const reservation = '940000'; // mieszkanie zarezerwowane
     const forsale = '3a9019'; // mieszkanie na sprzedaz
-    const rent = 'de8300'; // mieszkanie wynajete
+    const rent = '1788c9'; // mieszkanie wynajete
     const hoverOpacity = 0.8;
     const normalState = 0.5;
 
