@@ -53,9 +53,13 @@ class Building extends Model
         return $this->hasMany('App\Models\Floor')->where('floor_id', '=', 0)->withCount('properties')->get(['id', 'name']);
     }
 
-    public function floorsOptionsWithCount(): Collection
+    public function floorsOptionsWithCount(int $parent): Collection
     {
-        return $this->hasMany('App\Models\Floor')->where('floor_id', '<>', 0)->withCount('properties')->get(['id', 'name']);
+        return $this
+            ->hasMany('App\Models\Floor')
+            ->where('floor_id', '=', $parent)
+            ->withCount('properties')
+            ->get(['id', 'name']);
     }
 
     /**

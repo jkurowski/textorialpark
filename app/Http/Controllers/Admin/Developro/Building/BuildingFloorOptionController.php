@@ -40,7 +40,7 @@ class BuildingFloorOptionController extends Controller
         return view('admin.developro.investment_building_floor_option.index', [
             'investment' => $investment,
             'building' => $building,
-            'list' => $building->floorsOptionsWithCount(),
+            'list' => $building->floorsOptionsWithCount($floor->id),
             'floor' => $floor
         ]);
     }
