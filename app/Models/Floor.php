@@ -33,7 +33,7 @@ class Floor extends Model
 
     public function properties()
     {
-        return $this->hasMany('App\Models\Property')->orderBy('position');
+        return $this->hasMany('App\Models\Property')->orderBy('number_order');
     }
 
     public function variants()
