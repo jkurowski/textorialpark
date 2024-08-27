@@ -10,6 +10,7 @@ font-family: 'Muli', sans-serif;
   --color-sold: #0063a9;
   --color-reservation: #940000;
   --color-forrent: #9f337a;
+  --color-forhour: #de8300;
   --color-issue-new: #0063a9;
   --color-issue-inprogress: #f9a632;
   --color-issue-completed: green;
@@ -3150,7 +3151,7 @@ span.actionBtn {
   background: var(--color-sold);
 }
 .badge.room-list-status-4 {
-  background: var(--color-forrent);
+  background: var(--color-forhour);
 }
 .badge.issue-status-1,
 .stage-title.issue-status-1 {

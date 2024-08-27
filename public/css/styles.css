@@ -3617,6 +3617,9 @@ a.nav-link:hover,
 .list-status.list-status-3 {
   background: #0063a9;
 }
+.list-status.list-status-4 {
+  background: #de8300;
+}
 .table a {
   background: #9a192b;
   color: #fff;
