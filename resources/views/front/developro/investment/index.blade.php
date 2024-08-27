@@ -4,10 +4,6 @@
 @section('seo_title', '')
 @section('seo_description', '')
 
-@section('pageheader')
-    @include('layouts.partials.page-header', ['title' => $page->title, 'header_file' => 'istniejacybg.jpg'])
-@stop
-
 @section('content')
     <section class="container container-dashed pt-5 pb-5" id="content">
         <div class="row">

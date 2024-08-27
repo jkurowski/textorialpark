@@ -30,7 +30,7 @@
     @stack('style')
 
 </head>
-@if($page->slug == "spacer-wirtualny" || $page->slug == "polityka-prywatnosci")
+@if($page->slug == "spacer-wirtualny" || $page->slug == "polityka-prywatnosci" || $page->slug == "do-wynajecia")
     <body class="spacer-wirtualny no-header">
 @else
 <body class="{{ !empty($body_class) ? $body_class : '' }}">

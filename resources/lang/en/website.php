@@ -21,4 +21,8 @@ return [
     'menu-renters' => 'RENTERS',
     'menu-investor' => 'INVESTOR',
     'menu-contact' => 'CONTACT',
+    'available' => 'Do wynajęcia',
+    'reserved' => 'Wynajęte',
+    'sold' => 'Rezerwacja',
+    'rented' => 'Wynajem na godziny',
 ];

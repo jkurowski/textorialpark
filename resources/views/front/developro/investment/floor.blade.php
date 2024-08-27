@@ -4,10 +4,6 @@
 @section('seo_title', '')
 @section('seo_description', '')
 
-@section('pageheader')
-    @include('layouts.partials.page-header', ['title' => $floor->name, 'header_file' => 'istniejacybg.jpg'])
-@stop
-
 @section('content')
     <section class="container container-dashed pt-5 pb-5" id="content">
         @if($investment->type == 1)
@@ -40,7 +36,7 @@
                                                                 shape="poly"
                                                                 href="#"
                                                                 data-item="{{$r->id}}"
-                                                                title="{{$r->name}}<br>Powierzchnia: <b class=fr>{{$r->area}} m<sup>2</sup></b><br><b>{{ roomStatus($r->status) }}</b>"
+                                                                title="<p class='text-uppercase mb-3'><b>{{$r->name}}</b></p><p>Powierzchnia: {{$r->area}} m<sup>2</sup></p><p class='text-uppercase mt-3 mb-0'><b>{{ roomStatus($r->status) }}</b></p>"
                                                                 alt="{{$r->slug}}"
                                                                 data-roomnumber="{{$r->number}}"
                                                                 data-roomtype="{{$r->typ}}"

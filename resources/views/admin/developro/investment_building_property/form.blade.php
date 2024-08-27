@@ -95,7 +95,8 @@
                                                     'select' => [
                                                         '1' => 'Do wynajęcia',
                                                         '2' => 'Wynajęte',
-                                                        '3' => 'Rezerwacja'
+                                                        '3' => 'Rezerwacja',
+                                                        '4' => 'Wynajem na godziny'
                                                 ]])
                                             </div>
                                         </div>
