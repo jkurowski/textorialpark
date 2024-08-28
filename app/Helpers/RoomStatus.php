@@ -5,11 +5,13 @@ if (! function_exists('roomStatus')) {
     {
         switch ($number) {
             case '1':
-                return 'Do wynajęcia';
+                return trans('website.available');
             case '2':
-                return 'Wynajęte';
+                return trans('website.reserved');
             case '3':
-                return 'Rezerwacja';
+                return trans('website.sold');
+            case '4':
+                return trans('website.rented');
         }
     }
 }
