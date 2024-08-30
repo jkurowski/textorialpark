@@ -80,7 +80,7 @@
                                                                         @endif
                                                                     </td>
                                                                     <td>
-                                                                        <a href="mailto:">Zapytaj o lokal</a>
+                                                                        <a href="mailto:biuro@st-pauls.com.pl?subject=Zapytanie o {{$r->name}}">Zapytaj o lokal</a>
                                                                     </td>
                                                                 </tr>
                                                             @endforeach
