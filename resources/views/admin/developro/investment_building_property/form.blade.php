@@ -120,6 +120,17 @@
                                         </div>
                                     </div>
                                 </div>
+
+                                <div class="row w-100 form-group">
+                                    @include('form-elements.html-input-file-pdf', [
+                                        'label' => 'Plan .pdf',
+                                        'sublabel' =>
+                                        'Plan do pobrania',
+                                        'name' => 'file_pdf',
+                                        'file' => $entry->file_pdf,
+                                        'file_preview' => config('images.property.preview_pdf_path')
+                                    ])
+                                </div>
                             </div>
                         </div>
                         <input type="hidden" name="floor_id" value="{{ $floor->id }}">

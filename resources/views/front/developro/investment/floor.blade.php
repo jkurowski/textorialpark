@@ -64,6 +64,7 @@
                                                                 <th>Nazwa</th>
                                                                 <th>Powierzchnia</th>
                                                                 <th></th>
+                                                                <th></th>
                                                             </tr>
                                                             </thead>
                                                             <tbody>
@@ -73,8 +74,13 @@
                                                                     <td class="vertical-align-middle ps-4">{{ $floor->number }}</td>
                                                                     <td class="vertical-align-middle">{{$r->name}}</td>
                                                                     <td class="vertical-align-middle">{{$r->area}} m<sup>2</sup></td>
+                                                                    <td class="td">
+                                                                        @if($r->file_pdf)
+                                                                        <a href="{{ asset('/investment/property/pdf/'.$r->file_pdf) }}" target="_blank">Pobierz kartę .pdf</a>
+                                                                        @endif
+                                                                    </td>
                                                                     <td>
-                                                                        <a href="">Zapytaj o lokal</a>
+                                                                        <a href="mailto:">Zapytaj o lokal</a>
                                                                     </td>
                                                                 </tr>
                                                             @endforeach
