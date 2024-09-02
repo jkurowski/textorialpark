@@ -10,6 +10,7 @@ use App\Models\Investment;
 use App\Models\Property;
 use App\Repositories\PropertyRepository;
 use App\Services\PropertyService;
+use Illuminate\Support\Facades\File;
 use Illuminate\Support\Facades\Session;
 
 class BuildingPropertyController extends Controller
@@ -118,5 +119,19 @@ class BuildingPropertyController extends Controller
     {
         $this->repository->delete($property->id);
         return response()->json('Deleted');
+    }
+
+    public function removeFile(Property $property)
+    {
+
+        if (File::isFile(public_path('investment/property/pdf/' . $property->file_pdf))) {
+            File::delete(public_path('investment/property/pdf/' . $property->file_pdf));
+        }
+
+        // Clear the file_pdf property and save the model
+        $property->file_pdf = null;
+        $property->save();
+
+        return redirect()->route('admin.developro.investment.building.floor.properties.edit', ['investment' => $property->investment, 'building' => $property->building, 'floor' => $property->floor, 'property' => $property]);
     }
 }

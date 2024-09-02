@@ -97,6 +97,8 @@ Route::group([
                 '{investment}/building.floor.properties' => 'Building\BuildingPropertyController',
                 '{investment}/property/{property}/message' => 'Property\InboxController'
             ]);
+
+            Route::get('{property}/remove-file', 'Building\BuildingPropertyController@removeFile')->name('removeFile');
         });
     });
 });

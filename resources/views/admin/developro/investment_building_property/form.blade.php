@@ -130,6 +130,11 @@
                                         'file' => $entry->file_pdf,
                                         'file_preview' => config('images.property.preview_pdf_path')
                                     ])
+                                    @if($entry->file_pdf)
+                                    <div class="col-4 offset-3">
+                                        <a href="{{ route("admin.developro.investment.removeFile", $entry) }}" class="btn btn-sm btn-primary mt-2">Usuń plik</a>
+                                    </div>
+                                    @endif
                                 </div>
                             </div>
                         </div>
