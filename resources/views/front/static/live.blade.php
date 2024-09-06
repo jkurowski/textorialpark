@@ -25,7 +25,7 @@
                             <div class="text-container">
                                 <p>Położenie miasta na przecięciu europejskich tras autostradowych sprawia, <b>że&nbsp;Łódź zajmuje wyjątkowe miejsce na mapie Europy</b>. Siatka połączeń lotniczych, kolejowych i autostradowych ułatwia podróże krajowe i międzynarodowe.</p>
                                 <p>&nbsp;</p>
-                                <p>Łódź to trzecie pod względem liczby mieszkańców miasto w Polsce.</p>
+                                <p>Łódź to czwarte pod względem liczby mieszkańców miasto w Polsce.</p>
                                 <p>&nbsp;</p>
                                 <p>Bliskość Łodzi do stolicy kraju (zaledwie 140 kilometrów) sprawia, że coraz częściej także i&nbsp;stamtąd wracają łodzianie, którzy wyjechali kiedyś w&nbsp;poszukiwaniu pracy.</p>
                             </div>
@@ -36,7 +36,7 @@
                             <div class="text-container">
                                 <p>The location of the city at the crossroads of european motorways <b>places Łódź in a very special place on the map of europe</b>. the broad network of air, railroad and motorway connections, has made the comfort of travelling much higher, for both domestic and international travel.</p>
                                 <p>&nbsp;</p>
-                                <p>Łódź is the 3rd largest city in Poland in terms of population.</p>
+                                <p>Łódź is the fourth largest city in Poland in terms of population.</p>
                                 <p>&nbsp;</p>
                                 <p>The nearness of Łódź to the country’s capital, situated only 140 kilometres away, is attracting commuters and prospective residents to the city and strengthening economic interactions in general.</p>
                             </div>
