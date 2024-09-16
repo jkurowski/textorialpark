@@ -17,8 +17,8 @@
                     <li class="nav-item {{ Request::routeIs('front.kampus') ? 'active' : '' }}">
                         <a class="nav-link js-scroll-trigger" href="{{ route('front.kampus') }}">@lang('website.menu-campus')</a>
                     </li>
-                    <li class="nav-item {{ Request::routeIs('front.plan') ? 'active' : '' }}">
-                        <a class="nav-link js-scroll-trigger" href="{{ route('front.plan') }}">@lang('website.menu-for-rent')</a>
+                    <li class="nav-item {{ Request::routeIs('investment') ? 'active' : '' }}">
+                        <a class="nav-link js-scroll-trigger" href="{{ route('investment') }}">@lang('website.menu-for-rent')</a>
                     </li>
                     <li class="nav-item @isset($page) @if($page->slug == 'spacer-wirtualny') active @endif @endisset">
                         <a class="nav-link js-scroll-trigger" href="{{ route('static', ['uri' => 'spacer-wirtualny']) }}">@lang('website.menu-virtual-walk')</a>
