@@ -13,6 +13,23 @@
                 </div>
             </div>
         </div>
+        <div class="header-social">
+            <a href="https://www.facebook.com/textorialpark/" class="me-2" target="_blank">
+                <img src="{{ asset('images/fb-ico.png') }}" alt="Facebook" width="35" height="33">
+            </a>
+
+            <a href="https://www.instagram.com/textorial_park/" class="me-2" target="_blank">
+                <img src="{{ asset('images/insta-ico.png') }}" alt="Instagram" width="34" height="34">
+            </a>
+
+            <a href="https://www.linkedin.com/company/textorial-park-ii/" class="me-2" target="_blank">
+                <img src="{{ asset('images/linkedin-ico.png') }}" alt="LinkedIn Logo" width="34" height="34">
+            </a>
+
+            <a href="https://www.youtube.com/@textorialpark539" target="_blank">
+                <img src="{{ asset('images/yt-ico.png') }}" alt="YouTube Logo" width="34" height="34">
+            </a>
+        </div>
     </header>
 
     <div style="background: white" class="position-relative">
