@@ -11,7 +11,7 @@
 
             <div class="collapse navbar-collapse justify-content-end" id="navbarResponsive">
                 <ul class="navbar-nav">
-                    <li class="nav-item">
+                    <li class="nav-item {{ Request::is('/') ? 'active' : '' }}">
                         <a class="nav-link" href="/">HOME</a>
                     </li>
                     <li class="nav-item {{ Request::routeIs('front.kampus') ? 'active' : '' }}">

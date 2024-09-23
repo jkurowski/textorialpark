@@ -22,7 +22,7 @@
                     <div class="row">
                         <div class="col-md-12">
                             <div style="position:relative;display:inline-block">
-                                <a href="{{ route('front.plan') }}" class="banerek">
+                                <a href="{{ route('investment') }}" class="banerek">
                                     <img src="{{ asset('images/baner-wynajem.png') }}" class="img-fluid" alt="">
                                 </a>
                             </div>
